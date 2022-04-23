@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
 
 :root {
   --very-dark-blue: hsl(233, 47%, 7%);
@@ -16,13 +16,18 @@
 }
 
 body {
-  font-size: 15px;
-  /* font-family: 'Inter', sans-serif; */
-  font-family: 'Lexend Deca', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  height: 95vh;
+
+  margin: 0 2rem;
+  background-color: black;
+  color: white;
 }
 
 ul {
@@ -30,6 +35,55 @@ ul {
   padding: 0;
 }
 
+.card {
+  border: 1px solid #ccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 2rem 0;
+}
+
+.card__title {
+  color: hsl(0, 0%, 100%);
+}
+
+.card__content {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.image {
+  width: 100%;
+}
+
+/*
+ =========== card stats ============
+*/
+
+.stats__numbers {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.card__info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stats__info {
+  display: flex;
+  flex-direction: column;
+  /* margin: 1em 0; */
+}
+
+.stats__label {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 13px;
+  /* padding-top: 0.5rem; */
+}
+
+/*
+=========== footer ================
+*/
 .attribution {
   font-size: 11px;
   text-align: center;
