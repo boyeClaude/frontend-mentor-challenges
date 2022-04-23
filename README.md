@@ -1,3 +1,3 @@
-# corewebsites
+# Frontend mentor Challenges
 
-clone website and building UI using html, css, scss and javascript
+The purpose of this repo is to show my solutions of the frontend mentor challenges
