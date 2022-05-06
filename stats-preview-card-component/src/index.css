@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --slightly-transparent-white-one: hsla(0, 0%, 100%, 0.75);
+  --slightly-transparent-white-two: hsla(0, 0%, 100%, 0.6);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+body {
+  padding: 2rem 4rem;
+  min-height: 90vh;
+  background: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  background: var(--dark-desaturated-blue);
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: 70vh;
+  background: url("../images/image-header-mobile.jpg") no-repeat center center/cover;
+  border-top-right-radius: 0.7rem;
+  border-top-left-radius: 0.7rem;
+}
+
+.card__info {
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.text-purple {
+  color: var(--soft-violet);
+}
+
+.card__content {
+  opacity: 0.5;
+  font-weight: 100;
+}
+
+.card__stats .stats__info {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__info .stats__numbers {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stats__info .stats__label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
+
+#overlay {
+  background: hsl(277, 64%, 61%);
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+}
+
+@media screen and (min-width: 1000px) {
+  section {
+    display: flex;
+  }
+
+  .card-image {
+    order: 2;
+    flex: 1;
+    border-bottom-right-radius: 0.7rem;
+    border-top-left-radius: 0;
+    height: 80vh;
+  }
+
+  img {
+    order: 2;
+    flex: 2;
+  }
+
+  .card__info {
+    flex: 1;
+    padding: 2rem 3rem;
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .card__stats {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .stats__info + .stats__info {
+    margin-left: 5rem;
+  }
+
+  .card__title {
+    width: 63%;
+  }
+
+  .card__content {
+    width: 77%;
+  }
+}
