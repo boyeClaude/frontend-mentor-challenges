@@ -1,4 +1,4 @@
-# Frontend mentor Challenges
+****# Frontend mentor Challenges
 
 > The purpose of this repo is to show my solutions of the frontend mentor challenges
 
@@ -9,6 +9,7 @@
 |03| Ping single column coming soon page                    | [demo](https://the-ping-coming-soon-page.netlify.app)
 |04| 3-column preview card component                        | [demo](https://the-three-column-preview-card.netlify.app)
 |05| Profile card component                                 | [demo](https://the-profile-card-component.netlify.app)
+|06| Stats preview card component                           | [demo](https://frontend-mentor-challenges-tawny.vercel.app)
 
 ## Live demo of challenges that are not on frontend mentor website
 
