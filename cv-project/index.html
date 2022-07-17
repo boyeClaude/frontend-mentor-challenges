@@ -3,217 +3,228 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalize css -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Classic Resume</title>
   </head>
+
   <body>
-    <header class="header">
-      <img src="img/avatar-iphone.svg" class="profile-img" alt="profile" />
-      <div class="author-content">
-        <p class="author-description">Designer / Developer</p>
-        <h2 class="author-name">Matt McDonald</h2>
-        <button class="btn">contact me</button>
+    <div class="header-wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="image">
+            <img src="img/avatar-iphone.svg" class="profile-img" alt="profile" />
+          </div>
+          <div class="author-content">
+            <p class="author-description">Designer / Developer</p>
+            <h2 class="author-name">
+              Matt <br />
+              McDonald
+            </h2>
+            <button class="btn">contact me</button>
+          </div>
+        </header>
       </div>
-    </header>
+    </div>
 
     <main class="main">
-      <section>
-        <div class="about-me">
-          <h2>About me</h2>
-          <p>
-            Use this area to say something about yourself or describe your
-            goals. Tum dicere exorsus est cur verear, ne ad id omnia referri
-            oporteat, ipsum per se ipsam voluptatem, quia consequuntur magni
-            dolores eos, qui blanditiis praesentium voluptatum deleniti atque
-            insitam in ea quid est eligendi optio, cumque nihil ut ipsi auctori
-            huius disciplinae placet: constituam, quid.
-          </p>
-          <span class="line"></span>
-        </div>
-        <div class="experience">
-          <h2>Experience</h2>
-          <div class="frontend-dev">
-            <div class="description">
-              <p class="title">front-end developer - Dropbox</p>
-              <p class="duration">Mar. 2020 - Present</p>
-            </div>
-            <div>
-              <p class="content">
-                Describe your responsibilities. Tum dicere exorsus est cur
-                verear, ne ad id omnia referri oporteat, ipsum per se ipsam
-                voluptatem, quia consequuntur magni dolores eos, qui blanditiis
-                praesentium voluptatum deleniti atque insitam in ea quid est
-                eligendi optio, cumque nihil ut ipsi auctori huius disciplinae
-                placet: constituam, quid.
-              </p>
-            </div>
-          </div>
-
-          <div class="visual-designer">
-            <div class="description">
-              <p class="title">Visual designer - outboundengine</p>
-              <p class="duration">Sept. 2020 - Mar.2020</p>
-            </div>
-            <div>
-              <p class="content">
-                Describe your responsibilities. Tum dicere exorsus est cur
-                verear, ne ad id omnia referri oporteat, ipsum per se ipsam
-                voluptatem, quia consequuntur magni dolores eos, qui blanditiis
-                praesentium voluptatum deleniti atque insitam in ea quid est
-                eligendi optio, cumque nihil ut ipsi auctori huius disciplinae
-                placet: constituam, quid.
-              </p>
-            </div>
-          </div>
-
-          <div class="lead-designer">
-            <div class="description">
-              <p class="title">Lead designer - scrypt, inc</p>
-              <p class="duration">Jun. 2014 - Sept.2017</p>
-            </div>
-            <div>
-              <p class="content">
-                Describe your responsibilities. Tum dicere exorsus est cur
-                verear, ne ad id omnia referri oporteat, ipsum per se ipsam
-                voluptatem, quia consequuntur magni dolores eos, qui blanditiis
-                praesentium voluptatum deleniti atque insitam in ea quid est
-                eligendi optio, cumque nihil ut ipsi auctori huius disciplinae
-                placet: constituam, quid.
-              </p>
-            </div>
-          </div>
-
-          <div class="ui-designer">
-            <div class="description">
-              <p class="title">UI designer - pinger inc</p>
-              <p class="duration">Jun. 2014 - Sept.2017</p>
-            </div>
-            <div>
-              <p class="content">
-                Describe your responsibilities. Tum dicere exorsus est cur
-                verear, ne ad id omnia referri oporteat, ipsum per se ipsam
-                voluptatem, quia consequuntur magni dolores eos, qui blanditiis
-                praesentium voluptatum deleniti atque insitam in ea quid est
-                eligendi optio, cumque nihil ut ipsi auctori huius disciplinae
-                placet: constituam, quid.
-              </p>
-            </div>
-          </div>
-          <span class="line"></span>
-        </div>
-
-        <div class="education">
-          <h2>Education</h2>
-          <div class="description">
-            <p class="title">
-              Bfa in graphic design - James Madison University
+      <div class="container flex">
+        <section class="section-one">
+          <div class="about-me">
+            <h2>About Me</h2>
+            <p>
+              Use this area to say something about yourself or describe your goals. Tum dicere exorsus est cur verear,
+              ne ad id omnia referri oporteat, ipsum per se ipsam voluptatem, quia consequuntur magni dolores eos, qui
+              blanditiis praesentium voluptatum deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut
+              ipsi auctori huius disciplinae placet: constituam, quid.
             </p>
-            <p class="duration">Graduated 2014</p>
+            <div class="line"></div>
+          </div>
+          <div class="experience">
+            <h2>Experience</h2>
+            <div class="frontend-dev">
+              <div class="description">
+                <p class="title">front-end developer - Dropbox</p>
+                <p class="duration">Mar. 2020 - Present</p>
+              </div>
+              <div>
+                <p class="content">
+                  Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad id omnia referri oporteat,
+                  ipsum per se ipsam voluptatem, quia consequuntur magni dolores eos, qui blanditiis praesentium
+                  voluptatum deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut ipsi auctori huius
+                  disciplinae placet: constituam, quid.
+                </p>
+              </div>
+            </div>
+
+            <div class="visual-designer">
+              <div class="description">
+                <p class="title">Visual designer - outboundengine</p>
+                <p class="duration">Sept. 2020 - Mar.2020</p>
+              </div>
+              <div>
+                <p class="content">
+                  Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad id omnia referri oporteat,
+                  ipsum per se ipsam voluptatem, quia consequuntur magni dolores eos, qui blanditiis praesentium
+                  voluptatum deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut ipsi auctori huius
+                  disciplinae placet: constituam, quid.
+                </p>
+              </div>
+            </div>
+
+            <div class="lead-designer">
+              <div class="description">
+                <p class="title">Lead designer - scrypt, inc</p>
+                <p class="duration">Jun. 2014 - Sept.2017</p>
+              </div>
+              <div>
+                <p class="content">
+                  Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad id omnia referri oporteat,
+                  ipsum per se ipsam voluptatem, quia consequuntur magni dolores eos, qui blanditiis praesentium
+                  voluptatum deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut ipsi auctori huius
+                  disciplinae placet: constituam, quid.
+                </p>
+              </div>
+            </div>
+
+            <div class="ui-designer">
+              <div class="description">
+                <p class="title">UI designer - pinger inc</p>
+                <p class="duration">Jun. 2014 - Sept.2017</p>
+              </div>
+              <div>
+                <p class="content">
+                  Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad id omnia referri oporteat,
+                  ipsum per se ipsam voluptatem, quia consequuntur magni dolores eos, qui blanditiis praesentium
+                  voluptatum deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut ipsi auctori huius
+                  disciplinae placet: constituam, quid.
+                </p>
+              </div>
+            </div>
+            <div class="line"></div>
+          </div>
+
+          <div class="education">
+            <h2>Education</h2>
+            <div class="description">
+              <p class="title">Bfa in graphic design - James Madison University</p>
+              <p class="duration">Graduated 2014</p>
+            </div>
+          </div>
+          <div class="line"></div>
+        </section>
+
+        <!--section two-->
+        <section class="section-two">
+          <div class="skillset">
+            <h3 class="title">Skillset</h3>
+            <ul>
+              <li>Visual Design</li>
+              <li>Illustration</li>
+              <li>UX / Prototyping</li>
+              <li>Video / Motion Graphics</li>
+              <li>Marketing</li>
+              <li>Front-End Development</li>
+            </ul>
+          </div>
+          <div class="awards">
+            <h3 class="title">Awards</h3>
+            <ul>
+              <li>Award 1 - Mar.2019</li>
+              <li>Award 2 - Sept.2015</li>
+              <li>Award 3 - Feb.2013</li>
+              <li>Award 4 - Dec.2011</li>
+              <li>Award 5 - Jan.2005</li>
+            </ul>
+          </div>
+
+          <div class="career-traits">
+            <h3 class="title">Career traits</h3>
+            <p>
+              <span class="bold">Holistic Designer</span> - Design should be treated as a living organism, guided by the
+              environment it lives in as a whole
+            </p>
+
+            <p>
+              <span class="bold">User-Focused</span> - I pay close attention to the users needs and pain points. I
+              design with empathy. Launch, learn & iterate
+            </p>
+
+            <p>
+              <span class="bold">Proactive Evolution </span> - Curiosity and a desire to learn constantly broadens my
+              skill set, enabling me to wear many hats at once.
+            </p>
+
+            <p>
+              <span class="bold">Bold, yet practical </span> - I know when to push the boundaries vs. when to embrace
+              simplicity to meet multiple deadlines.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="title">Recent works</h3>
+            <ul class="recent-works">
+              <li>
+                <span>thedonut.co</span>
+                <span> <i class="fas fa-long-arrow-alt-right"></i></span>
+              </li>
+              <li>
+                <span>outboundengine.com </span>
+                <span> <i class="fas fa-long-arrow-alt-right"></i></span>
+              </li>
+              <li>
+                <span>rswalsh.com </span>
+                <span> <i class="fas fa-long-arrow-alt-right"></i></span>
+              </li>
+              <li>
+                <span>frondaustin.com</span>
+                <span> <i class="fas fa-long-arrow-alt-right"></i></span>
+              </li>
+              <li>
+                <span>tipyo.net </span>
+                <span> <i class="fas fa-long-arrow-alt-right"></i></span>
+              </li>
+              <li>
+                <span>codefresh.io </span>
+                <span> <i class="fas fa-long-arrow-alt-right"></i></span>
+              </li>
+              <li>
+                <span>carsoncreekranch.com </span>
+                <span> <i class="fas fa-long-arrow-alt-right"></i></span>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-wrapper">
+        <div class="container">
+          <h2 class="footer-title">Get in touch !</h2>
+          <div class="info">
+            <p class="email">youremail@email.com</p>
+            <p class="contact"><span class="is-mobile">|</span> 512.273.1838</p>
+          </div>
+          <div class="social">
+            <img src="img/social/facebook.svg" alt="facebook" />
+            <img src="img/social/instagram.svg" alt="instagram" />
+            <img src="img/social/linkedin.svg" alt="linkedin" />
+            <img src="img/social/twitter.svg" alt="twitter" />
           </div>
         </div>
-      </section>
-
-      <!--section two-->
-      <section>
-        <div class="skillset">
-          <h3 class="title">Skillset</h3>
-          <ul>
-            <li>Visual Design</li>
-            <li>Illustration</li>
-            <li>UX / Prototyping</li>
-            <li>Video / Motion Graphics</li>
-            <li>Marketing</li>
-            <li>Front-End Development</li>
-          </ul>
-        </div>
-        <div class="awards">
-          <h2 class="title">Awards</h2>
-          <ul>
-            <li>Award 1 - Mar.2019</li>
-            <li>Award 2 - Sept.2015</li>
-            <li>Award 3 - Feb.2013</li>
-            <li>Award 4 - Dec.2011</li>
-            <li>Award 5 - Jan.2005</li>
-          </ul>
-        </div>
-
-        <div class="career-traits">
-          <h2 class="title">Career traits</h2>
-          <p>
-            <span class="bold">Holistic Designer</span> - Design should be
-            treated as a living organism, guided by the environment it lives in
-            as a whole
-          </p>
-
-          <p>
-            <span class="bold">User-Focused</span> - I pay close attention to
-            the users needs and pain points. I design with empathy. Launch,
-            learn & iterate
-          </p>
-
-          <p>
-            <span class="bold">Proactive Evolution </span> - Curiosity and a
-            desire to learn constantly broadens my skill set, enabling me to
-            wear many hats at once.
-          </p>
-
-          <p>
-            <span class="bold">Bold, yet practical </span> - I know when to push
-            the boundaries vs. when to embrace simplicity to meet multiple
-            deadlines.
-          </p>
-        </div>
-
-        <div class="recent-works">
-          <h2 class="title">Recent works</h2>
-          <ul>
-            <li>
-              <span>thedonut.co</span>
-              <span> <i class="fas fa-long-arrow-alt-right"></i></span>
-            </li>
-            <li>
-              <span>outboundengine.com </span>
-              <span> <i class="fas fa-long-arrow-alt-right"></i></span>
-            </li>
-            <li>
-              <span>rswalsh.com </span>
-              <span> <i class="fas fa-long-arrow-alt-right"></i></span>
-            </li>
-            <li>
-              <span>frondaustin.com</span>
-              <span> <i class="fas fa-long-arrow-alt-right"></i></span>
-            </li>
-            <li>
-              <span>tipyo.net </span>
-              <span> <i class="fas fa-long-arrow-alt-right"></i></span>
-            </li>
-            <li>
-              <span>codefresh.io </span>
-              <span> <i class="fas fa-long-arrow-alt-right"></i></span>
-            </li>
-            <li>
-              <span>carsoncreekranch.com </span>
-              <span> <i class="fas fa-long-arrow-alt-right"></i></span>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <h2>Get in touch</h2>
-      <p>youremail@email.com | 512.273.1838</p>
-      <div class="social">
-        <img src="img/social/facebook.svg" alt="facebook" />
-        <img src="img/social/instagram.svg" alt="instagram" />
-        <img src="img/social/linkedin.svg" alt="linkedin" />
-        <img src="img/social/twitter.svg" alt="twitter" />
       </div>
     </footer>
 
-    <script
-      src="https://kit.fontawesome.com/2364294e1a.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/2364294e1a.js" crossorigin="anonymous"></script>
   </body>
 </html>
