@@ -22,7 +22,7 @@
 
 ## Challenges done with tailwindcss
 
-| No  | Template name | Live example |
-| --- | ------------- | ------------ |
-| 01  | Clipboard     | [demo]()     |
-| 02  |               | [demo]()     |
+| No  | Template name | Live example                                              |
+| --- | ------------- | --------------------------------------------------------- |
+| 01  | Clipboard     | [demo](https://the-clipboard-frontend-mentor.netlify.app) |
+|     |               |                                                           |
