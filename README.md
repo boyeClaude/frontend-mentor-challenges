@@ -25,4 +25,4 @@
 | No  | Template name | Live example                                              |
 | --- | ------------- | --------------------------------------------------------- |
 | 01  | Clipboard     | [demo](https://the-clipboard-frontend-mentor.netlify.app) |
-| 02  | LoopStudio    | [demo]()                                                  |
+| 02  | LoopStudio    | [demo](https://theloopsite.netlify.app)                   |
