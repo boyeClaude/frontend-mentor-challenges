@@ -22,7 +22,8 @@
 
 ## Challenges done with tailwindcss
 
-| No  | Template name | Live example                                              |
-| --- | ------------- | --------------------------------------------------------- |
-| 01  | Clipboard     | [demo](https://the-clipboard-frontend-mentor.netlify.app) |
-| 02  | LoopStudio    | [demo](https://theloopsite.netlify.app)                   |
+| No  | Template name    | Live example                                              |
+| --- | ---------------- | --------------------------------------------------------- |
+| 01  | Clipboard        | [demo](https://the-clipboard-frontend-mentor.netlify.app) |
+| 02  | LoopStudio       | [demo](https://theloopsite.netlify.app)                   |
+| 03  | Testimonial Grid | [demo](https://the-testimonial-grid.netlify.app/)         |
