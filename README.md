@@ -2,7 +2,7 @@
 
 <br/>
 
-> The purpose of this repo is to show my solutions of the frontend mentor challenges
+> The purpose of this repo is to show my solutions of the frontend mentor challenges.
 
 | No  | Template name                                          | Live example                                                       |
 | --- | ------------------------------------------------------ | ------------------------------------------------------------------ |
