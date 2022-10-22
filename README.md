@@ -13,6 +13,7 @@
 | 05  | Profile card component              | [demo](https://the-profile-card-component.netlify.app)             |
 | 06  | Stats preview card component        | [demo](https://frontend-mentor-challenges-tawny.vercel.app)        |
 | 07  | Order summary component             | [demo](https://the-order-summary-component.netlify.app)            |
+| 08  | intro-component-with-signup-form    | [demo]()                                                           |
 
 ## Live demo of challenges that are not on frontend mentor website
 
