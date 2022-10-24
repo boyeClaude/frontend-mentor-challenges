@@ -4,6 +4,7 @@
   --clr-green: hsl(154, 59%, 51%);
   --clr-dark-blue: hsl(249, 10%, 26%);
   --clr-grayish-blue: hsl(246, 25%, 77%);
+  --clr-blue: hsl(248, 32%, 49%);
 }
 
 *,
@@ -19,7 +20,7 @@ body {
 
   background-image: url('./images/bg-intro-mobile.png');
   background-repeat: none;
-  background-size: cover;
+  background-size: contain;
 
   display: flex;
   flex-direction: column;
@@ -46,16 +47,86 @@ body {
 
 /* Left */
 .left {
-  border: 1px solid blue;
 }
 /* Right */
 .right {
-  border: 1px solid yellow;
   margin-top: 2rem;
 }
 
+.upper-btn {
+  padding: 1.5rem 1.5rem;
+  color: #ffffff;
+  background: var(--clr-blue);
+
+  width: 100%;
+  border-radius: 0.5rem;
+  border: none;
+
+  box-shadow: 1px 15px 5px -8px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 1px 15px 5px -8px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 1px 15px 5px -8px rgba(0, 0, 0, 0.57);
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.form--wrapper {
+  background: white;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+
+  box-shadow: 1px 15px 5px -8px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 1px 15px 5px -8px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 1px 15px 5px -8px rgba(0, 0, 0, 0.57);
+}
+
 .form {
-  border: 1px solid green;
+  padding: 1rem 1.5rem;
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 1rem;
+
+  margin-bottom: 1rem;
+  border-color: #ccc;
+  font-weight: 900;
+
+  outline: none;
+  border-width: 0.1rem;
+}
+
+.form-btn {
+  width: 100%;
+  background: var(--clr-green);
+  color: #ffffff;
+
+  text-transform: uppercase;
+  padding: 1rem 0.5rem;
+  border-radius: 0.3rem;
+
+  border: none;
+  font-weight: 700;
+}
+
+.terms-and-conditions {
+  color: var(--clr-grayish-blue);
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0.5rem;
+
+  padding-right: 0.8rem;
+  font-weight: 400;
+}
+
+.highlight {
+  color: var(--clr-red);
+  font-weight: bold;
 }
 
 .attribution {
@@ -64,4 +135,38 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    background-image: url('./images/bg-intro-desktop.png');
+    background-size: contain;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .main {
+    flex-direction: row;
+    padding-left: 4rem;
+    padding-right: 4rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .left {
+    align-self: center;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  .attribution {
+    /* margin-top: 6rem; */
+  }
 }
