@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+#main {
+  background-image: url("../images/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 99vh;
+}
