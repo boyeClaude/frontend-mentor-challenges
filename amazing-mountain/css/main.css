@@ -5,13 +5,238 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Work Sans", sans-serif;
+:root {
+  --clr-primary: #f70058;
+  --clr-dark: #0c0e36;
+  --clr-light: #fff;
+  --fw-normal: 400;
+  --fw-black: 700;
+  --fw-black: 900;
+  --grid: 1fr;
+  --grid_1: minmax(1em, 10%) min-content minmax(20rem, 45ch) 1fr minmax(1em, 3fr);
 }
 
-#main {
-  background-image: url("../images/sky.jpg");
-  background-repeat: no-repeat;
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.125rem;
+
+  color: var(--clr-dark);
+  line-height: 1.6;
+  background: gray;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25em 1.25em;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  font-weight: var(--fw-bold);
+  display: inline-block;
+  margin-bottom: 0.75em;
+}
+
+.btn--primary {
+  background-color: var(--clr-primary);
+  color: var(--clr-light);
+}
+
+.btn--primary:hover {
+  background-color: var(--clr-dark);
+}
+
+.btn--outline {
+  border: 3px solid var(--clr-primary);
+  color: var(--clr-primary);
+  outline-offset: -3px;
+}
+
+.btn--outline:hover {
+  background: var(--clr-dark);
+  border-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+header {
+  background-color: var(--clr-light);
+  text-align: center;
+}
+
+.logo {
+  margin-top: 1em;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+
+  padding: 1em;
+  list-style: none;
+  font-size: 0.875rem;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav__list-item {
+  margin-left: 2em;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.weather {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  background: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 1em;
+}
+
+.weather__icon {
+  grid-row: span 2;
+  background: var(--clr-primary);
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather__info {
+  margin: 0;
+  text-align: left;
+  margin-left: 0.75em;
+
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.75em;
+
+  display: flex;
+  align-items: center;
+}
+
+.weather__info span {
+  color: var(--clr-light);
+  margin-left: auto;
+  margin-right: 0.75em;
+  font-size: 1rem;
+  text-transform: none;
+}
+
+.weather__info:first-of-type {
+  margin-top: 0.5em;
+  position: relative;
+  margin-bottom: 0.2em;
+}
+
+.weather__info:first-of-type::after {
+  content: "";
+  position: absolute;
+  background: var(--clr-light);
+  opacity: 0.25;
+  height: 2px;
+  width: 100%;
+  bottom: -0.25rem;
+}
+
+.weather__info:last-of-type {
+  margin-bottom: 0.5em;
+  margin-top: 0.2em;
+}
+
+main {
+  padding: 3em 1em 10rem;
+}
+
+@media (min-width: 500px) {
+  .main {
+    display: grid;
+    grid-template-columns: var(--grid_1);
+    justify-items: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main > * {
+    grid-column: 2 / 4;
+  }
+
+  .main--ski {
+    background-position: left bottom;
+  }
+}
+
+@media (min-width: 700px) {
+  .nav {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    display: grid;
+    grid-template-columns: var(--grid_1);
+    align-items: center;
+  }
+
+  .logo,
+  .nav,
+  .weather {
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .logo {
+    grid-column: 2;
+  }
+
+  .nav {
+    grid-column: 2 / 5;
+    justify-self: end;
+    margin-right: 3em;
+  }
+
+  .weather {
+    grid-column: -2 / -1;
+    justify-self: end;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main--ski {
+    background-position: center right;
+  }
+}
+
+.main--ski {
+  background-image: url(../images/sky.jpg);
   background-size: cover;
-  min-height: 99vh;
+}
+
+.main__title {
+  line-height: 1;
+  font-weight: var(--fw-black);
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.main__intro {
+  margin-bottom: 2em;
 }
