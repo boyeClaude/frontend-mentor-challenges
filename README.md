@@ -18,12 +18,12 @@
 
 ## Live demo of challenges that are not on frontend mentor website
 
-| No  | Template name              | Live example                                 |
-| --- | -------------------------- | -------------------------------------------- |
-| 01  | Groway landig page website | [demo](https://groway-analytics.netlify.app) |
-| 02  | Crl landing page           | [demo](https://crl-webpage.netlify.app)      |
-| 03  | Cv project                 | [demo](https://the-cv-project.netlify.app/)  |
-| 04  | Amazing mountain           | [demo]()                                     |
+| No  | Template name              | Live example                                      |
+| --- | -------------------------- | ------------------------------------------------- |
+| 01  | Groway landig page website | [demo](https://groway-analytics.netlify.app)      |
+| 02  | Crl landing page           | [demo](https://crl-webpage.netlify.app)           |
+| 03  | Cv project                 | [demo](https://the-cv-project.netlify.app/)       |
+| 04  | Amazing mountain           | [demo](https://the-amazing-mountain.netlify.app/) |
 
 ## Challenges done with tailwindcss
 
