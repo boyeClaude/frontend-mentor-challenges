@@ -24,7 +24,7 @@
 | 02  | Crl landing page           | [demo](https://crl-webpage.netlify.app)           |
 | 03  | Cv project                 | [demo](https://the-cv-project.netlify.app/)       |
 | 04  | Amazing mountain           | [demo](https://the-amazing-mountain.netlify.app/) |
-| 05  | CSS Workshop               | [demo]()                                          |
+| 05  | CSS Workshop               | [demo](https://css-workshop.netlify.app/)         |
 
 ## Challenges done with tailwindcss
 
