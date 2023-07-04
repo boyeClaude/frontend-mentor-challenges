@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- js -->
+    <script src="https://kit.fontawesome.com/ead4dd04cb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <h1>
+            <a href="#">
+              <span class="fa-solid fa-code" aria-hidden="true"></span>
+              Frederic Boye
+            </a>
+          </h1>
+        </li>
+
+        <li class="nav--item"><a href="#projects" class="nav--link">Projects</a></li>
+        <li class="nav--item"><a href="#about.html" class="nav--link">About</a></li>
+        <li class="nav--item"><a href="#contact" class="nav--link">Contact</a></li>
+        <li class="nav--item">
+          <a href="https://www.linkedin.com/in/fredericboye/" target="_blank" class="nav--link">
+            <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="nav--item">
+          <a href="#" class="nav--link">
+            <span class="fa-brands fa-github" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li class="nav--item"><a href="#" class="button">Resume</a></li>
+      </ul>
+    </nav>
+    <section id="intro">
+      <p class="name">Hi, my name is <span>Frederic Boye.</span></p>
+      <h2>I develop and make magic happens on the web</h2>
+      <p>I'm a developer specializing in HTML, CSS, user experience, Javascript, Typescript, and JS frameworks.</p>
+      <p>Currently, I'm working as a <a href="#">frontend dev .</a></p>
+    </section>
+  </body>
+
+  <!-- bottom line -->
+  <div class="gradient"></div>
+
+  <!-- portfolio -->
+  <div class="section-dkblue">
+    <section id="projects">
+      <h2>Projects I'm proud of</h2>
+      <article>
+        <div class="text">
+          <h4>Latest Project</h4>
+          <h3>Wall of Wonder</h3>
+          <p class="blackbox">
+            Description of the project. This should be fairly concise while also describing the key components that you developed or worked on. It can be as
+            long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks
+            like
+            <a href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look
+            <a href="#">like this</a>
+          </p>
+
+          <h4>Technologies used include:</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SVG</li>
+          </ul>
+        </div>
+        <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png" alt="Screenshot of the Wall of Wonder." />
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Bootcamp Project</h2>
+      <article class="reverse">
+        <div class="text text-reverse">
+          <h4>Feed-A-Star-Mole Game</h4>
+          <h3>Description of the project</h3>
+          <p class="blackbox">
+            This should be fairly concise while also describing the key components that you developed or worked on. It can be as long as you need it to be but
+            should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like
+            <a href="https://frontendmasters.github.io/bootcamp/mole">this</a>, and multiple links look <a href="#">like this</a> and <a href="#">like this</a>.
+          </p>
+
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-5.png" alt="Screenshot of the Wall of Wonder Collections." />
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2>Photography Project</h2>
+      <article>
+        <div class="text">
+          <h4>Wall of Wonder Collection</h4>
+          <h3>Description of the project</h3>
+          <p class="blackbox">
+            This should be fairly concise while also describing the key components that you developed or worked on. It can be as long as you need it to be but
+            should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like
+            <a href="https://frontendmasters.github.io/grid-flexbox-v2/grid-figure-figcaption">this</a>, and multiple links look <a href="#">like this</a> and
+            <a href="#">like this</a>.
+          </p>
+
+          <h4>Technologies used include</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS Grid</li>
+          </ul>
+        </div>
+        <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-4.png" alt="Screenshot of the Wall of Wonder Collections." />
+      </article>
+    </section>
+  </div>
+
+  <!-- contact -->
+  <div class="section-plum">
+    <section id="contact">
+      <h2>Contact me</h2>
+      <p>I'm always interested in hearing about new teaching opportunities, writing curricula, or instructional design work.</p>
+      <p><a href="mailto:jen@example.com" class="button">Email me</a></p>
+    </section>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <h2>Frederic Boye</h2>
+    <ul>
+      <li>
+        <a href="https://www.linkedin.com/in/fredericboye/" target="_blank">
+          <span class="fab fa-linkedin" aria-hidden="true"></span>
+          <span class="sr-only">LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/boyeClaude" target="_blank">
+          <span class="fab fa-github-square" aria-hidden="true"></span>
+          <span class="sr-only">Github</span>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:boye.claude@gmail.com">
+          <span class="fas fa-envelope" aria-hidden="true"></span>
+          <span class="sr-only">Email</span>
+        </a>
+      </li>
+    </ul>
+    <p><small>&copy; 2023 Frederic Boye. All rights reserved.</small></p>
+  </footer>
+</html>
