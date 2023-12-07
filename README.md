@@ -16,6 +16,12 @@
 | 08  | intro-component-with-signup-form    | [demo](https://the-intro-component-with-signup-form.netlify.app)   |
 | 09  | product-preview-card-component      | [demo](https://the-product-preview-card-component.netlify.app/)    |
 
+## Challenges done with tailwindcss
+
+| Template name                  | Live example |
+| ------------------------------ | ------------ |
+| product-preview-card-component | [demo]()     |
+
 ## Live demo of challenges that are not on frontend mentor website
 
 | No  | Template name              | Live example                                      |
@@ -25,12 +31,3 @@
 | 03  | Cv project                 | [demo](https://the-cv-project.netlify.app/)       |
 | 04  | Amazing mountain           | [demo](https://the-amazing-mountain.netlify.app/) |
 | 05  | CSS Workshop               | [demo](https://css-workshop.netlify.app/)         |
-
-## Challenges done with tailwindcss
-
-| No  | Template name                  | Live example                                              |
-| --- | ------------------------------ | --------------------------------------------------------- |
-| 01  | Clipboard                      | [demo](https://the-clipboard-frontend-mentor.netlify.app) |
-| 02  | LoopStudio                     | [demo](https://theloopsite.netlify.app)                   |
-| 03  | Testimonial Grid               | [demo](https://the-testimonial-grid.netlify.app/)         |
-| 04  | product-preview-card-component | [demo]()                                                  |
