@@ -18,9 +18,9 @@
 
 ## Challenges done with tailwindcss
 
-| Template name                  | Live example |
-| ------------------------------ | ------------ |
-| product-preview-card-component | [demo]()     |
+| Template name                  | Live example                                           |
+| ------------------------------ | ------------------------------------------------------ |
+| product-preview-card-component | [demo](https://tw-product-card-component.netlify.app/) |
 
 ## Live demo of challenges that are not on frontend mentor website
 
