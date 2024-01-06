@@ -51,62 +51,65 @@ a {
 }
 
 /* icon */
-.icon--wrapper {
-  border: 1px solid transparent;
-  background: var(--clr-dark-blue);
-  padding: 0.7rem;
-  border-radius: 50%;
-}
 img {
-  margin-bottom: -0.188rem;
+  background-color: var(--clr-dark-blue);
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
 .card-title {
   color: white;
-  padding-top: 0.8rem;
 }
 
 .card-content {
   color: var(--clr-light-grey);
+  line-height: 1.8;
 }
 
-/* rating */
-.rating-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-}
-
-.rating--list-item {
-  background-color: var(--clr-dark-blue);
-  padding: 1.2rem;
-  border-radius: 50%;
-  cursor: pointer;
-  /* color: #ffffff; */
-
+/* new buttons */
+.group-button {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.rating--list-item:hover {
+.btn-rating {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+
+  border-radius: 50%;
+  background-color: var(--clr-dark-blue);
+  cursor: pointer;
+
+  color: var(--clr-light-grey);
+  transition: 0.3s;
+}
+
+.btn-rating:hover {
   background: var(--clr-orange);
+  color: #ffffff;
 }
 
-.rating--item {
-  text-decoration: none;
+.btn-rating:focus {
+  background-color: var(--clr-light-grey);
+  color: #ffffff;
 }
 
 .btn {
-  padding: 1rem 2rem;
+  padding: 1rem 0.6rem;
   text-transform: uppercase;
   background-color: var(--clr-orange);
+
   color: white;
   border: none;
   width: 100%;
+
   margin-top: 1.5rem;
   border-radius: 2rem;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .btn:hover {
@@ -131,6 +134,10 @@ img {
 }
 
 /* thank you page css */
+.hidden {
+  display: none;
+}
+
 .card__secondary {
   text-align: center;
 }
@@ -142,7 +149,7 @@ img {
 
 .rating {
   color: var(--clr-orange);
-  background-color: var(--clr-dark-blue-1);
+  background-color: hsl(213, 20%, 22%);
   padding: 0.2rem 0.8rem;
   border-radius: 0.8rem;
 }

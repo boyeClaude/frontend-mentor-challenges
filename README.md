@@ -15,6 +15,7 @@
 | 07  | Order summary component             | [demo](https://the-order-summary-component.netlify.app)            |
 | 08  | intro-component-with-signup-form    | [demo](https://the-intro-component-with-signup-form.netlify.app)   |
 | 09  | product-preview-card-component      | [demo](https://the-product-preview-card-component.netlify.app/)    |
+| 10  | Interactive rating component        | [demo]()                                                           |
 
 ## Challenges done with tailwindcss
 

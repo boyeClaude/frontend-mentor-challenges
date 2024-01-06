@@ -10,37 +10,42 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="card">
+      <div class="card main-container">
         <!-- icon star -->
-        <span class="icon--wrapper">
-          <img src="./images/icon-star.svg" alt="icon star" class="img" />
-        </span>
+        <img src="./images/icon-star.svg" alt="icon star" class="img" />
+
         <h2 class="card-title">How did we do?</h2>
         <p class="card-content">
           Please let us know how we did with your support request. All feedback is appreciated to help us improve our
           offering!
         </p>
 
-        <div class="rating-container">
-          <div class="rating--list-item">
-            <a class="rating--item" href="#">1</a>
-          </div>
-          <div class="rating--list-item">
-            <a class="rating--item" href="#">2</a>
-          </div>
-          <div class="rating--list-item">
-            <a class="rating--item" href="#">3</a>
-          </div>
-          <div class="rating--list-item">
-            <a class="rating--item" href="#">4</a>
-          </div>
-          <div class="rating--list-item">
-            <a class="rating--item" href="#">5</a>
-          </div>
-        </div>
+        <ul class="group-button">
+          <li><button class="btn-rating">1</button></li>
+          <li><button class="btn-rating">2</button></li>
+          <li><button class="btn-rating">3</button></li>
+          <li><button class="btn-rating">4</button></li>
+          <li><button class="btn-rating">5</button></li>
+        </ul>
 
-        <button class="btn">Submit</button>
+        <button class="btn" id="submit">Submit</button>
       </div>
+
+      <!-- Thank you state start -->
+      <div class="card card__secondary hidden thanks-container">
+        <img class="card__secondary__img" src="./images/illustration-thank-you.svg" alt="illustration" />
+        <div>
+          <a class="rating">You selected <span id="rating">5</span> out of 5</a>
+        </div>
+        <h3 class="title__secondary">Thank you!</h3>
+        <p class="content__secondary">
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+          touch!
+        </p>
+        <!-- add button rate again -->
+        <button class="btn" id="rate-again">Rate again</button>
+      </div>
+      <!-- Thank you state end -->
 
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
