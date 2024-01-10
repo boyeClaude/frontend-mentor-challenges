@@ -16,7 +16,7 @@
 | 08  | intro-component-with-signup-form    | [demo](https://the-intro-component-with-signup-form.netlify.app)   |
 | 09  | product-preview-card-component      | [demo](https://the-product-preview-card-component.netlify.app/)    |
 | 10  | Interactive rating component        | [demo](https://the-interactive-rating-component-main.netlify.app/) |
-| 11  | Base apparel coming soon            | [demo]()                                                           |
+| 11  | Base apparel coming soon            | [demo](https://the-base-apparel-coming-soon.netlify.app/)          |
 
 ## Challenges done with tailwindcss
 
