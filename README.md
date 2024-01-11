@@ -18,6 +18,7 @@
 | 10  | Interactive rating component        | [demo](https://the-interactive-rating-component-main.netlify.app/) |
 | 11  | Base apparel coming soon            | [demo](https://the-base-apparel-coming-soon.netlify.app/)          |
 | 12  | QR code component                   | [demo](https://the-qr-code-component.netlify.app/)                 |
+| 13  | NFT preview card component          | [demo]()                                                           |
 
 ## Challenges done with tailwindcss
 

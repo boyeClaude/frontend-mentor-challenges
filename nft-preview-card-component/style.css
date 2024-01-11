@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-soft-blue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --clr-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --clr-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --clr-very-dark-blue-line: hsl(215, 32%, 27%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-very-dark-blue-main-bg);
+}
+
+.card {
+  background-color: var(--clr-very-dark-blue-card-bg);
+  width: 100%;
+  max-width: 24rem;
+
+  color: var(--clr-soft-blue);
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+
+  margin: 1.5rem 0;
+}
+
+.wrapper-img {
+  position: relative;
+}
+
+.wrapper-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background: var(--clr-cyan);
+  transition: opacity 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 1.2rem;
+}
+
+.wrapper-img .icon-view {
+  position: absolute;
+  top: 50%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper-img:hover .overlay {
+  opacity: 0.7;
+}
+
+.card-img {
+  width: 100%;
+  max-width: 22rem;
+  border-radius: 1.2rem;
+}
+
+.card-title {
+  color: var(--clr-white);
+}
+
+.card-title:hover,
+.avatar-name:hover {
+  color: var(--clr-cyan);
+  cursor: pointer;
+}
+
+.card-content {
+  color: var(--clr-soft-blue);
+  line-height: 1.8;
+}
+
+.subcontent {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.ethereum {
+  color: var(--clr-cyan);
+  padding-left: 0.2rem;
+}
+
+.line {
+  background: var(--clr-very-dark-blue-line);
+  height: 0.188rem;
+  border: none;
+}
+
+.avatar--container {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  font-size: 1rem;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 3rem;
+  border-radius: 50%;
+  border: 2px solid var(--clr-white);
+}
+
+.avatar-label {
+  padding-left: 1.4rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #ffffff;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
