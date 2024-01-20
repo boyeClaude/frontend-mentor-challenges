@@ -19,6 +19,7 @@
 | 11  | Base apparel coming soon            | [demo](https://the-base-apparel-coming-soon.netlify.app/)          |
 | 12  | QR code component                   | [demo](https://the-qr-code-component.netlify.app/)                 |
 | 13  | NFT preview card component          | [demo](https://the-nft-preview-card-component.netlify.app/)        |
+| 13  | Social proof section                | [demo](https://the-social-proof-section.netlify.app/)              |
 
 ## Challenges done with tailwindcss
 
