@@ -25,7 +25,8 @@
 
 | Template name                  | Live example                                           |
 | ------------------------------ | ------------------------------------------------------ |
-| product-preview-card-component | [demo](https://tw-product-card-component.netlify.app/) |
+| Product preview card component | [demo](https://tw-product-card-component.netlify.app/) |
+| Interative-rating component    | [demo](https://tw-interative-rating.netlify.app/)      |
 
 ## Live demo of challenges that are not on frontend mentor website
 
