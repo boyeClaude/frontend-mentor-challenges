@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tw | interative rating</title>
+  </head>
+  <body class="flex flex-col justify-center items-center min-h-screen bg-veryDarkBlue p-4">
+    <!-- first card -->
+    <div
+      id="first_card"
+      class="border-1 max-w-sm border-mediumGrey p-8 bg-gradient-to-b from-darkBlue to-veryDarkBlue_1 rounded-2xl"
+    >
+      <img class="p-4 bg-darkBlue rounded-full" src="/icon-star.svg" alt="icon start" />
+      <h2 class="mt-4 mb-2 text-white text-2xl font-bold">How did we do?</h2>
+      <p class="text-mediumGrey leading-7">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!
+      </p>
+      <li class="list-none flex flex-wrap justify-between items-center my-8">
+        <button
+          id="btn"
+          class="px-4 py-2 bg-darkBlue rounded-full text-mediumGrey hover:bg-orange hover:text-white focus:bg-mediumGrey focus:text-white"
+        >
+          1
+        </button>
+        <button
+          id="btn"
+          class="px-4 py-2 bg-darkBlue rounded-full text-mediumGrey hover:bg-orange hover:text-white focus:bg-mediumGrey focus:text-white"
+        >
+          2
+        </button>
+        <button
+          id="btn"
+          class="px-4 py-2 bg-darkBlue rounded-full text-mediumGrey hover:bg-orange hover:text-white focus:bg-mediumGrey focus:text-white"
+        >
+          3
+        </button>
+        <button
+          id="btn"
+          class="px-4 py-2 bg-darkBlue rounded-full text-mediumGrey hover:bg-orange hover:text-white focus:bg-mediumGrey focus:text-white"
+        >
+          4
+        </button>
+        <button
+          id="btn"
+          class="px-4 py-2 bg-darkBlue rounded-full text-mediumGrey hover:bg-orange hover:text-white focus:bg-mediumGrey focus:text-white"
+        >
+          5
+        </button>
+      </li>
+
+      <button
+        id="btn-submit"
+        class="bg-orange text-white uppercase w-full py-2 px-4 rounded-full hover:text-orange hover:bg-white"
+      >
+        Submit
+      </button>
+    </div>
+    <!-- thank you card -->
+    <div
+      id="thank_you_card"
+      class="border-1 max-w-sm border-mediumGrey p-8 bg-gradient-to-b from-darkBlue to-veryDarkBlue_1 rounded-2xl text-center hidden"
+    >
+      <img class="w-28 m-auto mb-4" src="/illustration-thank-you.svg" alt="thank you" />
+      <span class="bg-darkBlue text-orange rounded-full px-4 py-1 text-sm"
+        >You selected <span id="selectedRate">5</span> out of 5</span
+      >
+      <p class="my-4 text-white text-2xl font-bold">Thank you!</p>
+      <p class="text-mediumGrey leading-7">
+        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in
+        touch!
+      </p>
+
+      <button
+        id="btn-rating"
+        class="mt-6 bg-orange text-white uppercase w-full py-2 px-4 rounded-full hover:text-orange hover:bg-white"
+      >
+        Rate again
+      </button>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
