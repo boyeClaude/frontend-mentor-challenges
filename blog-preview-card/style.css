@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-yellow: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 50%);
+  --clr-black: hsl(0, 0%, 7%);
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 1rem;
+  background-color: var(--clr-yellow);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  padding: 2rem;
+}
+
+/* ----- card ---- */
+
+#card {
+  width: 100%;
+  max-width: 24rem;
+  padding: 1.5rem;
+
+  background-color: var(--clr-white);
+  border-radius: 1.5rem;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card-img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card-label {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--clr-yellow);
+
+  color: var(--clr-black);
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.4rem 1.2rem;
+}
+
+.published {
+  font-size: 0.9rem;
+}
+
+.card-title {
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.card-title:hover {
+  color: var(--clr-yellow);
+  cursor: pointer;
+}
+
+.card-content {
+  line-height: 1.6;
+  color: var(--clr-grey);
+}
+
+.wrapper-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.avatar-name {
+  padding-left: 0.5rem;
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

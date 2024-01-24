@@ -20,6 +20,7 @@
 | 12  | QR code component                   | [demo](https://the-qr-code-component.netlify.app/)                 |
 | 13  | NFT preview card component          | [demo](https://the-nft-preview-card-component.netlify.app/)        |
 | 13  | Social proof section                | [demo](https://the-social-proof-section.netlify.app/)              |
+| 14  | Blog preview card                   | [demo]()                                                           |
 
 ## Challenges done with tailwindcss
 
@@ -27,6 +28,7 @@
 | ------------------------------ | ------------------------------------------------------ |
 | Product preview card component | [demo](https://tw-product-card-component.netlify.app/) |
 | Interative-rating component    | [demo](https://tw-interative-rating.netlify.app/)      |
+| NFT preview card component     | [demo]()                                               |
 
 ## Live demo of challenges that are not on frontend mentor website
 

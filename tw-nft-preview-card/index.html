@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <title>NFT preview card</title>
+  </head>
+  <body class="flex flex-col justify-center items-center min-h-full bg-veryDarkBlueMain_BG p-8">
+    <div id="card" class="bg-veryDarkBlueCard_BG p-4 max-w-sm rounded-2xl shadow-lg shadow-veryDarkBlueCard_BG">
+      <!-- img card -->
+      <div id="wrapper-img-card" class="relative group">
+        <img src="/image-equilibrium.jpg" alt="equilibrium" class="w-full max-w-sm p-2 rounded-3xl" />
+        <div
+          id="overlay"
+          class="absolute top-0 right-0 left-0 bottom-0 rounded-3xl group-hover:bg-cyan group-hover:opacity-75 group-hover:p-0 ease-in-out duration-300"
+        >
+          <img src="/icon-view.svg" alt="icon-view" class="absolute top-1/2 right-1/3 hidden group-hover:block" />
+        </div>
+      </div>
+
+      <!-- card content -->
+      <h2 class="p-2 text-white text-2xl hover:text-cyan hover:cursor-pointer">Equilibrium #3429</h2>
+      <p class="p-2 text-softBlue leading-8 tracking-wide">Our Equilibrium collection promotes balance and calm.</p>
+
+      <div id="wrapper-currency" class="p-2 flex justify-between items-center mb-2">
+        <div id="eth" class="flex items-center">
+          <span><img src="/icon-ethereum.svg" alt="icon-ethereum" /> </span>
+          <span class="uppercase pl-2 text-cyan">0.041 ETH</span>
+        </div>
+
+        <div id="days-left" class="flex items-center">
+          <span>
+            <img src="/icon-clock.svg" alt="icon-ethereum" />
+          </span>
+          <span class="pl-2 text-softBlue">3 days left</span>
+        </div>
+      </div>
+
+      <!-- line -->
+      <hr id="line" class="h-0.5 px-4 bg-softBlue border-0" />
+
+      <!-- avatar section -->
+      <div id="avatar" class="flex items-center space-x-4 mt-2">
+        <img src="/image-avatar.png" alt="image-avatar" class="w-full max-w-12 border-white rounded-full border-2" />
+        <span class="text-sm">
+          <span id="highlight" class="text-softBlue">Creation of </span>
+          <span id="avatar-name" class="hover:text-cyan hover:cursor-pointer text-white"> Jules Wyvern</span>
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
