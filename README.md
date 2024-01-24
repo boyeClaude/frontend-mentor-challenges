@@ -20,7 +20,7 @@
 | 12  | QR code component                   | [demo](https://the-qr-code-component.netlify.app/)                 |
 | 13  | NFT preview card component          | [demo](https://the-nft-preview-card-component.netlify.app/)        |
 | 13  | Social proof section                | [demo](https://the-social-proof-section.netlify.app/)              |
-| 14  | Blog preview card                   | [demo]()                                                           |
+| 14  | Blog preview card                   | [demo](https://the-blog-preview-card.netlify.app/)                 |
 
 ## Challenges done with tailwindcss
 
