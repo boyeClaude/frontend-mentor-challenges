@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+
+  <body>
+    <div class="card">
+      <!-- left -->
+      <div class="left">
+        <h3 class="label">Your Result</h3>
+        <div class="circle-summary">
+          <div class="result">76</div>
+          <div class="total">of 100</div>
+        </div>
+        <div class="div--content">
+          <h3 class="great">Great</h3>
+          <p class="info">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+
+      <!-- right -->
+      <div class="right">
+        <h3 class="summary">Summary</h3>
+        <!-- reaction -->
+        <div class="little-card bg-reaction">
+          <div class="little-card__label">
+            <img src="./assets/images/icon-reaction.svg" alt="icon-reaction" class="img" />
+            <span class="name name__reaction">Reaction</span>
+          </div>
+          <div class="little-card__info"><span class="bold">80</span> / 100</div>
+        </div>
+
+        <!-- memory -->
+        <div class="little-card bg-memory">
+          <div class="little-card__label">
+            <img src="./assets/images/icon-memory.svg" alt="icon-memory" class="img" />
+            <span class="name name__memory">Memory</span>
+          </div>
+          <div class="little-card__info"><span class="bold">92</span> / 100</div>
+        </div>
+
+        <!-- verbal -->
+        <div class="little-card bg-verbal">
+          <div class="little-card__label">
+            <img src="./assets/images/icon-verbal.svg" alt="icon-verbal" class="img" />
+            <span class="name name__verbal">Verbal</span>
+          </div>
+          <div class="little-card__info"><span class="bold">61 </span>/ 100</div>
+        </div>
+
+        <!-- visual -->
+        <div class="little-card bg-visual">
+          <div class="little-card__label visual">
+            <img src="./assets/images/icon-visual.svg" alt="icon-visual" class="img" />
+            <span class="name name__visual"> Visual</span>
+          </div>
+          <div class="little-card__info"><span class="bold">72 </span>/ 100</div>
+        </div>
+
+        <!-- button -->
+        <button class="btn">Continue</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="#">Frederic Boye</a>.
+    </div>
+  </body>
+</html>

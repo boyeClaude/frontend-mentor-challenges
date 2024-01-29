@@ -1,0 +1,249 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-light-red: hsl(0, 100%, 67%);
+  --clr-orangey-yellow: hsl(39, 100%, 56%);
+  --clr-green-teal: hsl(166, 100%, 37%);
+  --clr-cobalt-blue: hsl(234, 85%, 45%);
+
+  --clr-light-slate-blue-bg: hsl(252, 100%, 67%);
+  --clr-light-royal-blue-bg: hsl(241, 81%, 54%);
+  --clr-violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --clr-persian-blue: hsla(241, 72%, 46%, 0);
+
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-pale-blue: hsl(221, 100%, 96%);
+  --clr-neutral-light-lavender: hsl(241, 100%, 89%);
+  --clr-neutral-dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1.125rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.card {
+  width: 100%;
+  max-width: 25rem;
+
+  box-shadow: 10px 2px 49px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 2px 49px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 2px 49px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* left */
+.left {
+  text-align: center;
+  color: var(--clr-neutral-white);
+  background: linear-gradient(var(--clr-light-slate-blue-bg), var(--clr-light-royal-blue-bg));
+
+  padding: 1rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.label {
+  margin-top: 0;
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 70%);
+}
+
+.circle-summary {
+  background-color: var(--clr-violet-blue-circle);
+  height: 7rem;
+  width: 7rem;
+
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.result {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.total {
+  color: hsla(0, 0%, 100%, 50%);
+  font-size: 0.8rem;
+}
+
+.great {
+  margin: 0.5rem 0;
+}
+
+.info {
+  font-size: 0.9rem;
+  width: 60%;
+  margin: 0 auto;
+
+  color: hsla(0, 0%, 100%, 70%);
+}
+
+/* right */
+.right {
+  padding: 1rem;
+}
+
+.summary {
+  font-size: 1rem;
+}
+
+.little-card {
+  padding: 0.8rem;
+  font-size: 1rem;
+
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.little-card + .little-card {
+  margin: 1rem 0;
+}
+
+.little-card__label {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.little-card__info {
+  color: var(--clr-neutral-dark-gray-blue);
+}
+
+.bg-reaction {
+  background-color: hsla(0, 100%, 67%, 10%);
+}
+.name__reaction {
+  color: var(--clr-light-red);
+}
+
+.bg-memory {
+  background-color: hsla(39, 100%, 56%, 10%);
+}
+.name__memory {
+  color: var(--clr-orangey-yellow);
+}
+
+.bg-verbal {
+  background-color: hsla(166, 100%, 37%, 10%);
+}
+.name__verbal {
+  color: var(--clr-green-teal);
+}
+
+.bg-visual {
+  background-color: hsla(234, 85%, 45%, 10%);
+}
+.name__visual {
+  color: var(--clr-cobalt-blue);
+}
+
+.img {
+  padding-right: 0.4rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* button */
+.btn {
+  border: none;
+  width: 100%;
+  padding: 1rem 2rem;
+
+  background-color: var(--clr-neutral-dark-gray-blue);
+  color: var(--clr-neutral-white);
+  border-radius: 2rem;
+
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(var(--clr-light-slate-blue-bg), var(--clr-light-royal-blue-bg));
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 64rem) {
+  .card {
+    display: flex;
+    justify-content: space-between;
+    max-width: 45rem;
+    border-radius: 2rem;
+  }
+
+  .left,
+  .right {
+    flex: 1;
+  }
+
+  /* left --------- */
+  .left {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding-top: 3.2rem;
+  }
+
+  .circle-summary {
+    height: 9rem;
+    width: 9rem;
+    margin-top: 2rem;
+
+    position: relative;
+  }
+
+  .result {
+    font-size: 4.5rem;
+  }
+
+  .total {
+    font-size: 1rem;
+    position: absolute;
+    top: 68%;
+    right: 37%;
+  }
+
+  .div--content {
+    margin-top: 2.5rem;
+  }
+
+  .info {
+    padding-top: 0.5rem;
+    width: 65%;
+  }
+
+  /* right ------------ */
+  .right {
+    padding: 2.5rem;
+  }
+}
