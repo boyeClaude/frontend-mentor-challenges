@@ -22,7 +22,7 @@
 | 13  | Social proof section                | [demo](https://the-social-proof-section.netlify.app/)              |
 | 14  | Blog preview card                   | [demo](https://the-blog-preview-card.netlify.app/)                 |
 | 15  | Four card feature section           | [demo](https://the-four-card-feature-section.netlify.app/)         |
-| 16  | Results summary component           | [demo]()                                                           |
+| 16  | Results summary component           | [demo](https://the-results-summary-component.netlify.app/)         |
 
 ## Challenges done with tailwindcss
 
