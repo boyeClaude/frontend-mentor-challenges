@@ -24,6 +24,7 @@
 | 15  | Four card feature section           | [demo](https://the-four-card-feature-section.netlify.app/)         |
 | 16  | Results summary component           | [demo](https://the-results-summary-component.netlify.app/)         |
 | 17  | Social links profile                | [demo](https://the-social-links-profile.netlify.app/)              |
+| 18  | Recipe page                         | [demo](https://the-recipepage.netlify.app/)                        |
 
 ## Challenges done with tailwindcss
 
