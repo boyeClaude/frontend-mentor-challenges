@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-pink: hsl(275, 100%, 97%);
+  --clr-grayish-purple: hsl(292, 16%, 49%);
+  --clr-dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: var(--clr-light-pink);
+
+  margin: 0;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.top__background {
+  background-image: url("./assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 40vh;
+  min-width: 100%;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.wrapper {
+  background-color: var(--clr-white);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  width: 100%;
+  max-width: 35rem;
+  z-index: 2;
+  margin-top: 2rem;
+}
+
+/* title */
+.wrapper--title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-star {
+  width: 2rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+/* accordion */
+.accordion .container {
+  position: relative;
+  margin: 0.625rem 0.625rem;
+}
+
+.accordion .label {
+  position: relative;
+  padding: 0.625rem 0;
+  font-size: 1.1rem;
+
+  cursor: pointer;
+  color: var(--clr-dark-purple);
+  font-weight: bold;
+}
+
+.accordion .label::after {
+  content: "+";
+  color: white;
+  background-color: #ad28eb;
+
+  position: absolute;
+  top: 39%;
+  right: -17px;
+  transform: translateY(-50%);
+
+  font-size: 1.2rem;
+  padding: 0.2rem;
+
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion .content {
+  position: relative;
+  height: 0;
+  text-align: justify;
+  line-height: 1.6;
+  transition: 0.5s;
+  color: var(--clr-grayish-purple);
+  overflow: hidden;
+}
+
+.accordion hr {
+  background-color: var(--clr-grayish-purple);
+  margin-left: 0;
+}
+
+/* unhide the content of the container part when active & set the height */
+.accordion .container.active .content {
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.accordion .container.active .label::after {
+  content: "-";
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 64rem) {
+  .top__background {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+  }
+
+  /* accordion */
+  .accordion .label {
+    font-size: 1rem;
+  }
+}

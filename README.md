@@ -25,6 +25,7 @@
 | 16  | Results summary component           | [demo](https://the-results-summary-component.netlify.app/)         |
 | 17  | Social links profile                | [demo](https://the-social-links-profile.netlify.app/)              |
 | 18  | Recipe page                         | [demo](https://the-recipepage.netlify.app/)                        |
+| 19  | FAQ accordion                       | [demo]()                                                           |
 
 ## Challenges done with tailwindcss
 
