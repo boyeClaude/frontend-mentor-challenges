@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --clr-desaturated-dark-blue: hsl(214, 17%, 51%);
+  --clr-grayish-blue: hsl(212, 23%, 69%);
+  --clr-light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.813rem;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-light-grayish-blue);
+  padding: 1rem;
+}
+
+.card {
+  border-radius: 1rem;
+  background-color: white;
+  max-width: 35rem;
+}
+
+/* ========= left =========  */
+.left {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-image: url("./images/drawers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.img-drawers {
+  width: 100%;
+  max-width: 35rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* ========= right =========  */
+.card-title {
+  color: var(--clr-very-dark-grayish-blue);
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0 2rem;
+}
+
+.card-content {
+  color: var(--clr-desaturated-dark-blue);
+  font-weight: 500;
+  line-height: 1.4rem;
+  padding: 0 2rem;
+}
+
+#author-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.wrapper__avatar {
+  display: flex;
+  align-items: center;
+  /* display: none; */
+}
+
+.img-avatar {
+  width: 100%;
+  max-width: 3rem;
+  border-radius: 50%;
+}
+
+.avatar-info {
+  padding-left: 1rem;
+}
+
+.avatar-name,
+.avatar-dob {
+  display: block;
+}
+
+.avatar-name {
+  color: var(--clr-very-dark-grayish-blue);
+  font-weight: 700;
+}
+
+.avatar-dob {
+  color: var(--clr-desaturated-dark-blue);
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+/*  ----- Share section ---- */
+.wrapper__socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--clr-very-dark-grayish-blue);
+  padding: 1rem 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#share__social-container {
+  display: flex;
+}
+
+.share {
+  text-transform: uppercase;
+  color: var(--clr-grayish-blue);
+  letter-spacing: 0.2rem;
+}
+
+.social-icons {
+  padding-left: 3rem;
+}
+
+.img-social:nth-child(2) {
+  margin: 0 0.8rem;
+}
+
+/* ====== arrow icons === */
+.icon-share {
+  background-color: var(--clr-light-grayish-blue);
+  height: 2rem;
+  width: 2rem;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ========= footer =========  */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 64rem) {
+  .card {
+    display: flex;
+    max-width: 50rem;
+    box-shadow: 10px 10px 32px 0px rgba(0, 0, 0, 0.75);
+    position: relative;
+  }
+
+  .img-drawers {
+    max-width: 25rem;
+
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+  }
+
+  /* ============ right ============  */
+
+  .right {
+    flex: 1;
+  }
+
+  .card-title {
+    margin-top: 1.5rem;
+  }
+
+  .card-content {
+    margin-top: 1rem;
+  }
+
+  /* ----- Share section ----- */
+  .wrapper__socials {
+    position: absolute;
+    top: 10.625rem;
+    right: -4.813rem;
+    border-radius: 0.5rem;
+  }
+
+  .wrapper__socials:after {
+    content: "";
+    margin: 0 0.5em;
+    display: inline-block;
+    border: 7px solid transparent;
+    border-top: 8px solid var(--clr-very-dark-grayish-blue);
+    border-bottom: 0 none;
+
+    position: absolute;
+    top: 3.438rem;
+    right: 6.75rem;
+  }
+
+  .social-icons {
+    padding-left: 1.2rem;
+  }
+
+  .desktop__hide {
+    display: none;
+  }
+
+  /* footer */
+  .attribution {
+    margin-top: 2rem;
+  }
+}
