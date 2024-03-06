@@ -26,7 +26,7 @@
 | 17  | Social links profile                | [demo](https://the-social-links-profile.netlify.app/)              |
 | 18  | Recipe page                         | [demo](https://the-recipepage.netlify.app/)                        |
 | 19  | FAQ accordion                       | [demo](https://the-faq-accordion.netlify.app/)                     |
-| 20  | Article preview component           | [demo]()                                                           |
+| 20  | Article preview component           | [demo](https://the-article-preview-component.netlify.app/)         |
 
 ## Challenges done with tailwindcss
 
