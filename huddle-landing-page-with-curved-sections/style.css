@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@700&display=swap");
+
+:root {
+  --clr-pink: hsl(322, 100%, 66%);
+  --clr-light-pink: hsl(321, 100%, 78%);
+  --clr-light-red: hsl(0, 100%, 63%);
+  --clr-very-dark-cyan: hsl(192, 100%, 9%);
+  --clr-very-pale-blue: hsl(207, 100%, 98%);
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+/* ----- Utilities ---- */
+.container {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 2rem;
+}
+
+.img-responsive {
+  width: 100%;
+  max-width: 40rem;
+}
+
+/* ----- Header ----- */
+.header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.head-btn {
+  padding: 0.3rem 1rem;
+  color: var(--clr-light-pink);
+  background-color: white;
+  border: 2px solid transparent;
+
+  border-color: var(--clr-light-pink);
+  border-radius: 1rem;
+  outline: none;
+  cursor: pointer;
+}
+
+/* ----- Hero section ----- */
+.hero-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.hero-title {
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-btn,
+.btn-community {
+  margin: 2.5rem 0;
+  padding: 0.8rem 3rem;
+  border-radius: 2rem;
+
+  background-color: var(--clr-pink);
+  color: white;
+  font-weight: bold;
+
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-img {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 40rem;
+}
+
+/* ----- count section ----- */
+.count-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.communities,
+.message {
+  margin: 2rem 0 4rem 0;
+}
+
+.icon-communities,
+.icon-messages {
+  width: 2rem;
+}
+
+.communities-total,
+.total-message {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  margin: 0;
+}
+
+.label {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* ----- grow together section ----- */
+.grow-together {
+  /* background-image: url("./images/bg-section-top-mobile-1.svg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f6fbff;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.img-grow-together {
+  order: -1;
+}
+
+/* ----- Your users section ----- */
+.your-users {
+  background-color: #f6fbff;
+  padding: 2rem 0;
+}
+
+/* ----- Your-community ---- */
+.your-community {
+  text-align: center;
+  margin: 8rem 0;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.btn-community {
+  margin: 0;
+}
+
+/* ---- Footer ---- */
+#footer {
+  margin: 6rem 0 0 0;
+  background-color: #00252e;
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us {
+  margin: 1rem;
+}
+
+.contact-us {
+  margin-top: 1rem;
+  order: -1;
+  line-height: 1.6;
+}
+
+.newsletter {
+  text-transform: uppercase;
+}
+
+/* .form {
+  text-align: right;
+} */
+
+.form .input {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+.btn-subscribe {
+  text-align: right;
+}
+
+#attribution {
+  background-color: #00252e;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+
+  padding: 1rem 0;
+  color: white;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
