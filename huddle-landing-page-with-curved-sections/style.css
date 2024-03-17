@@ -60,11 +60,8 @@ body {
 }
 
 .hero-btn,
-.btn-community {
-  margin: 2.5rem 0;
-  padding: 0.8rem 3rem;
-  border-radius: 2rem;
-
+.btn-community,
+.btn-subscribe {
   background-color: var(--clr-pink);
   color: white;
   font-weight: bold;
@@ -72,6 +69,13 @@ body {
   border: none;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
+}
+
+.hero-btn,
+.btn-community {
+  margin: 2.5rem 0;
+  padding: 0.8rem 3rem;
+  border-radius: 2rem;
 }
 
 .hero-img {
@@ -110,40 +114,67 @@ body {
 }
 
 /* ----- grow together section ----- */
-.grow-together {
+#grow-together {
   /* background-image: url("./images/bg-section-top-mobile-1.svg"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #f6fbff;
-
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0;
+  padding: 2rem 0 3rem 0;
+  text-align: center;
 }
 
-.img-grow-together {
+.grow-together,
+.flowing-conversations,
+.your-users {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper--grow-together,
+.wrapper--flowing-conversations,
+.wrapper--your-users {
+  margin-top: 3rem;
+}
+
+.content {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.img-grow-together,
+.img-flowing-conversation,
+.img-your-users {
   order: -1;
 }
 
+/* ----- Flowing conversations ----- */
+#flowing-conversations {
+  padding: 8rem 0;
+  text-align: center;
+}
+
 /* ----- Your users section ----- */
-.your-users {
+#your-users {
   background-color: #f6fbff;
-  padding: 2rem 0;
+  padding: 6rem 0;
+  text-align: center;
 }
 
 /* ----- Your-community ---- */
-.your-community {
+#your-community {
   text-align: center;
   margin: 8rem 0;
+  padding: 4rem 0;
 }
 
 .title {
+  margin: 0;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 
 .btn-community {
-  margin: 0;
+  margin-top: 2rem;
 }
 
 /* ---- Footer ---- */
@@ -160,7 +191,31 @@ body {
 }
 
 .about-us {
-  margin: 1rem;
+  margin-top: 3.5rem;
+}
+
+.logo__footer {
+  width: 10rem;
+}
+
+.paragraph {
+  line-height: 1.6;
+  width: 90%;
+}
+
+#phone,
+#email,
+#socials {
+  margin-top: 1.5rem;
+}
+
+.phone-number,
+.email {
+  padding-left: 1rem;
+}
+
+.fa + .fa {
+  padding-left: 1rem;
 }
 
 .contact-us {
@@ -173,19 +228,22 @@ body {
   text-transform: uppercase;
 }
 
-/* .form {
-  text-align: right;
-} */
-
-.form .input {
-  width: 100%;
-  padding: 0.7rem;
+.input {
+  width: 96%;
+  padding: 0.6rem;
   border-radius: 0.4rem;
   border: none;
 }
 
-.btn-subscribe {
+.form-group {
   text-align: right;
+}
+
+.btn-subscribe {
+  padding: 0.6rem 2rem;
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+  display: inline-block;
 }
 
 #attribution {
@@ -203,4 +261,113 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 64rem) {
+  .container {
+    padding: 0;
+    max-width: 60rem;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .img-responsive {
+    max-width: 25rem;
+  }
+
+  /* ----- Hero section ----- */
+  .hero-content {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* ----- Count section ----- */
+  .count-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* ----- Grow together, 
+  flowing conversations & your users section ----- */
+  #grow-together,
+  #flowing-conversations,
+  #your-users {
+    text-align: left;
+  }
+
+  .wrapper--grow-together {
+    margin-top: 0;
+  }
+
+  .grow-together,
+  .flowing-conversations,
+  .your-users {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wrapper--grow-together,
+  .wrapper--flowing-conversations,
+  .wrapper--your-users,
+  .img-grow-together,
+  .img-flowing-conversation,
+  .img-your-users {
+    flex: 1;
+  }
+
+  .img-grow-together,
+  .img-flowing-conversation,
+  .img-your-users {
+    order: 1;
+  }
+
+  /* ---- footer ----- */
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-us {
+    order: -1;
+  }
+
+  .about-us,
+  .contact-us {
+    flex: 1;
+  }
+
+  .about-us {
+    padding-right: 5rem;
+  }
+
+  .contact-us {
+    margin-top: 3.1rem;
+    padding-left: 3rem;
+  }
+
+  .newsletter {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    padding-left: 1rem;
+  }
+
+  .input {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+  }
+
+  .btn-subscribe {
+    margin-top: 0;
+  }
 }

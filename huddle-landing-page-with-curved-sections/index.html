@@ -17,12 +17,14 @@
 
     <div class="container">
       <section class="hero-section">
-        <h2 class="hero-title">Build The Community Your Fans Will Love</h2>
-        <div class="hero-content">
-          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
-          connections with your users as you engage in genuine discussion.
+        <div class="block__content">
+          <h2 class="hero-title">Build The Community Your Fans Will Love</h2>
+          <div class="hero-content">
+            Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
+            connections with your users as you engage in genuine discussion.
+          </div>
+          <button class="hero-btn">Get Started For Free</button>
         </div>
-        <button class="hero-btn">Get Started For Free</button>
         <img class="hero-img" src="./images/screen-mockups.svg" alt="screen-mockups" />
       </section>
     </div>
@@ -42,13 +44,15 @@
       </section>
     </div>
 
-    <section class="grow-together">
-      <div class="container">
-        <h3 class="title">Grow Together</h3>
-        <p class="content">
-          Generate meaningful discussions with your audience and build a strong, loyal community. Think of the
-          insightful conversations you miss out on with a feedback form.
-        </p>
+    <section id="grow-together">
+      <div class="container grow-together">
+        <div class="wrapper--grow-together">
+          <h3 class="title">Grow Together</h3>
+          <p class="content">
+            Generate meaningful discussions with your audience and build a strong, loyal community. Think of the
+            insightful conversations you miss out on with a feedback form.
+          </p>
+        </div>
         <img
           class="img-responsive img-grow-together"
           src="./images/illustration-grow-together.svg"
@@ -57,33 +61,41 @@
       </div>
     </section>
 
-    <section class="flowing-conversations">
-      <div class="container">
-        <h3 class="title">Flowing Conversations</h3>
-        <p class="content">
-          You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading
-          for a more natural flow.
-        </p>
+    <section id="flowing-conversations">
+      <div class="container flowing-conversations">
+        <div class="wrapper--flowing-conversations">
+          <h3 class="title">Flowing Conversations</h3>
+          <p class="content">
+            You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time
+            loading for a more natural flow.
+          </p>
+        </div>
         <img
-          class="img-responsive"
+          class="img-responsive img-flowing-conversation"
           src="./images/illustration-flowing-conversation.svg"
           alt="illustration-flowing-conversation"
         />
       </div>
     </section>
 
-    <section class="your-users">
-      <div class="container">
-        <h3 class="title">Your Users</h3>
-        <p class="content">
-          It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed
-          in to your app, your users can start chatting immediately.
-        </p>
-        <img class="img-responsive" src="./images/illustration-your-users.svg" alt="illustration-your-users" />
+    <section id="your-users">
+      <div class="container your-users">
+        <div class="wrapper--your-users">
+          <h3 class="title">Your Users</h3>
+          <p class="content">
+            It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed
+            in to your app, your users can start chatting immediately.
+          </p>
+        </div>
+        <img
+          class="img-responsive img-your-users"
+          src="./images/illustration-your-users.svg"
+          alt="illustration-your-users"
+        />
       </div>
     </section>
 
-    <section class="your-community">
+    <section id="your-community">
       <div class="container">
         <h3 class="title">Ready To Build Your Community?</h3>
         <button class="btn-community">Get Started For Free</button>
@@ -99,13 +111,13 @@
             ultrices quis sem.
           </p>
           <div id="phone">
-            <span><img src="./images/icon-phone.svg" alt="icon-phone" /></span>
-            <span>Phone: +1-543-123-4567</span>
+            <img class="icon-phone" src="./images/icon-phone.svg" alt="icon-phone" />
+            <span class="phone-number">Phone: +1-543-123-4567</span>
           </div>
 
           <div id="email">
-            <span><img src="./images/icon-email.svg" alt="icon-email" /></span>
-            <span>example@huddle.com</span>
+            <img src="./images/icon-email.svg" alt="icon-email" />
+            <span class="email">example@huddle.com</span>
           </div>
 
           <div id="socials">
@@ -122,8 +134,10 @@
           </p>
 
           <form action="#" class="form">
-            <input type="text" class="input" /> <br />
-            <button class="btn-subscribe">Subscribe</button>
+            <input type="text" class="input" />
+            <div class="form-group">
+              <button class="btn-subscribe">Subscribe</button>
+            </div>
           </form>
         </div>
       </div>
