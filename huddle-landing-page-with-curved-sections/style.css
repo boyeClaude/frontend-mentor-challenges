@@ -78,6 +78,16 @@ body {
   border-radius: 2rem;
 }
 
+.hero-btn:hover,
+.btn-community:hover,
+.btn-subscribe:hover {
+  background-color: var(--clr-light-pink);
+}
+
+.head-btn:hover {
+  border-color: var(--clr-light-pink);
+}
+
 .hero-img {
   margin: 2rem 0;
   width: 100%;
@@ -115,12 +125,9 @@ body {
 
 /* ----- grow together section ----- */
 #grow-together {
-  /* background-image: url("./images/bg-section-top-mobile-1.svg"); */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #f6fbff;
   padding: 2rem 0 3rem 0;
   text-align: center;
+  background-color: var(--clr-very-pale-blue);
 }
 
 .grow-together,
@@ -218,6 +225,21 @@ body {
   padding-left: 1rem;
 }
 
+.fa-facebook-square:hover {
+  color: #316ff6;
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  color: #bc2a8d;
+  cursor: pointer;
+}
+
+.fa-twitter-square:hover {
+  color: #1da1f2;
+  cursor: pointer;
+}
+
 .contact-us {
   margin-top: 1rem;
   order: -1;
@@ -233,6 +255,7 @@ body {
   padding: 0.6rem;
   border-radius: 0.4rem;
   border: none;
+  outline: none;
 }
 
 .form-group {
