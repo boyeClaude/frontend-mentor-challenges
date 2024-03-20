@@ -27,6 +27,7 @@
 | 18  | Recipe page                         | [demo](https://the-recipepage.netlify.app/)                        |
 | 19  | FAQ accordion                       | [demo](https://the-faq-accordion.netlify.app/)                     |
 | 20  | Article preview component           | [demo](https://the-article-preview-component.netlify.app/)         |
+| 21  | huddle-landing-page-with-curved     | [demo](https://the-huddle-landing-page-with-curved.netlify.app/)   |
 
 ## Challenges done with tailwindcss
 
