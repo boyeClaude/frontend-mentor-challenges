@@ -127,6 +127,16 @@ body {
 #grow-together {
   padding: 2rem 0 3rem 0;
   text-align: center;
+}
+
+.bg-wave {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bg-grow-together,
+.bg-your-users {
   background-color: var(--clr-very-pale-blue);
 }
 
@@ -135,6 +145,14 @@ body {
 .your-users {
   display: flex;
   flex-direction: column;
+}
+
+.wrapper--grow-together {
+  padding: 2rem;
+}
+
+.wrapper--your-users {
+  padding-bottom: 4rem;
 }
 
 .wrapper--grow-together,
@@ -146,6 +164,10 @@ body {
 .content {
   margin-bottom: 0;
   margin-top: 0.5rem;
+}
+
+.img-grow-together {
+  padding-top: 2rem;
 }
 
 .img-grow-together,
@@ -162,7 +184,6 @@ body {
 
 /* ----- Your users section ----- */
 #your-users {
-  background-color: #f6fbff;
   padding: 6rem 0;
   text-align: center;
 }
@@ -171,7 +192,7 @@ body {
 #your-community {
   text-align: center;
   margin: 8rem 0;
-  padding: 4rem 0;
+  padding: 2.5rem 0 3rem 0;
 }
 
 .title {
@@ -187,9 +208,12 @@ body {
 /* ---- Footer ---- */
 #footer {
   margin: 6rem 0 0 0;
-  background-color: #00252e;
   color: white;
-  padding: 2rem 0;
+}
+
+.bg-footer {
+  background-color: #00252e;
+  padding-bottom: 2rem;
 }
 
 .footer {
