@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Fylo landing page with two column layout</title>
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -13,9 +14,9 @@
           <img class="brand-logo" src="./images/logo.svg" alt="header logo" />
 
           <ul class="navigation">
-            <li class="nav-item"><a href="#">Features</a></li>
-            <li class="nav-item"><a href="#">Team</a></li>
-            <li class="nav-item"><a href="#">Sign In</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#">Team</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#">Sign In</a></li>
           </ul>
         </div>
       </div>
@@ -23,7 +24,7 @@
 
     <section class="hero">
       <div class="container">
-        <img src="./images/illustration-1.svg" alt="illustration-1" />
+        <img class="hero-img" src="./images/illustration-1.svg" alt="illustration-1" />
         <div class="wrapper--content">
           <h3 class="hero-title">All your files in one secure location, accessible anywhere.</h3>
           <p class="hero-content">
@@ -43,12 +44,12 @@
 
     <section id="stay-productive">
       <picture>
-        <source media="(min-width:64rem)" srcset="./images/bg-curve-desktop.svg" class="bg-curve" />
-        <img class="bg-curve" src="./images/bg-curve-mobile.svg" alt="bg-curve-mobile" />
+        <source media="(min-width:64rem)" srcset="./images/bg-curve-desktop.svg" class="bg-curve__desktop" />
+        <img class="bg-curve__mobile" src="./images/bg-curve-mobile.svg" alt="bg-curve-mobile" />
       </picture>
       <div class="stay-productive">
         <div class="container">
-          <img src="./images/illustration-2.svg" alt="illustration-2" />
+          <img class="img-stay-productive" src="./images/illustration-2.svg" alt="illustration-2" />
 
           <div class="wrapper--content--stay-productive">
             <h3 class="title-1">Stay productive, wherever you are</h3>
@@ -103,11 +104,46 @@
         </form>
       </div>
     </section>
-    Phone: +1-543-123-4567 example@fylo.com About Us Jobs Press Blog Contact Us Terms Privacy
 
     <section id="footer">
       <div class="container">
         <img src="./images/footer-logo.svg" alt="footer-logo" />
+        <div class="how-to-reach-us">
+          <div class="phone">
+            <span><img src="./images/icon-phone.svg" alt="icon-phone" /></span>
+            <span>Phone: +1-543-123-4567</span>
+          </div>
+          <div class="email">
+            <span><img src="./images/icon-email.svg" alt="icon-email" /></span>
+            <span>example@fylo.com</span>
+          </div>
+        </div>
+
+        <ul class="footer--link_1">
+          <li class="footer--item">About Us</li>
+          <li class="footer--item">Jobs</li>
+          <li class="footer--item">Press</li>
+          <li class="footer--item">Blog</li>
+        </ul>
+
+        <ul class="footer--link_2">
+          <li class="footer--item">Contact Us</li>
+          <li class="footer--item">Terms</li>
+          <li class="footer--item">Privacy</li>
+        </ul>
+
+        <!-- social links -->
+        <div class="socials-links">
+          <span class="icon-wrapper">
+            <i class="fa-brands fa-2x fa-facebook"></i>
+          </span>
+          <span class="icon-wrapper">
+            <i class="fa-brands fa-2x fa-twitter"></i>
+          </span>
+          <span class="icon-wrapper">
+            <i class="fa-brands fa-2x fa-instagram"></i>
+          </span>
+        </div>
       </div>
     </section>
     <div>
@@ -116,5 +152,8 @@
         <a href="#">Frederic Boye</a>.
       </p>
     </div>
+
+    <!-- fontawesome links -->
+    <script src="https://kit.fontawesome.com/ead4dd04cb.js" crossorigin="anonymous"></script>
   </body>
 </html>
