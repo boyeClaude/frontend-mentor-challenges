@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
@@ -13,6 +19,8 @@ body {
   /* font-family: "Raleway", sans-serif; */
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
+  /* padding: 0; */
+  margin: 0;
 }
 
 ul {
@@ -63,23 +71,93 @@ a {
   width: 100%;
 }
 
+/* Hero section -------- */
+.hero-wrapper {
+  text-align: center;
+}
+
 .hero-img {
   max-width: 30rem;
+}
+
+.wrapper--content .hero-title {
+  font-size: 1.3rem;
+  color: var(--clr-very-dark-blue);
+  font-weight: bold;
+}
+
+form {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 3rem;
+}
+
+.hero-content {
+  color: var(--clr-very-dark-blue);
+}
+
+.hero-form {
+  margin-top: 2rem;
+}
+
+.input {
+  padding: 0.4rem;
+  outline: none;
+  width: 100%;
+
+  padding: 0.6rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.btn-form {
+  width: 100%;
+  padding: 0.7rem 0;
+  margin-top: 0.5rem;
+
+  background-color: var(--clr-bright-blue);
+  color: white;
+  font-weight: bold;
+
+  border: none;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-size: 0.9rem;
+}
+
+/* Stay productive section ----------- */
+.bg-curve__mobile,
+.bg-curve__desktop {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+
+.bg-img,
+.wrapper--content--stay-productive {
+  background-color: #f8f8fe;
 }
 
 .img-stay-productive {
   max-width: 30rem;
 }
 
-.bg-curve__mobile,
-.bg-curve__desktop {
-  object-fit: cover;
-  width: 100%;
+.title-1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 2rem;
+}
+
+/* Footer -------- */
+#footer,
+#attribution {
+  background-color: #ccc;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 0;
+  padding: 1rem 0;
 }
 
 .attribution a {
@@ -87,7 +165,7 @@ a {
 }
 
 /* Navigation responsive on small screen size */
-@media (max-width: 27rem) {
+@media (max-width: 21.875rem) {
   .navigation__wrapper {
     flex-direction: column;
   }
