@@ -8,123 +8,125 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" role="banner">
       <div class="container">
         <div class="navigation__wrapper">
           <img class="brand-logo" src="./images/logo.svg" alt="header logo" />
 
-          <ul class="navigation">
+          <nav class="navigation" role="navigation">
             <li class="nav-item"><a class="nav-item__link" href="#">Features</a></li>
             <li class="nav-item"><a class="nav-item__link" href="#">Team</a></li>
             <li class="nav-item"><a class="nav-item__link" href="#">Sign In</a></li>
-          </ul>
+          </nav>
         </div>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <div class="hero-wrapper">
-          <img class="hero-img" src="./images/illustration-1.svg" alt="illustration-1" />
-          <div class="wrapper--content">
-            <h3 class="hero-title">All your files in one secure location, accessible anywhere.</h3>
-            <p class="hero-content">
-              Fylo stores your most important files in one secure location. Access them wherever you need, share and
-              collaborate with friends, family, and co-workers.
-            </p>
+    <main role="main">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <img class="hero-img" src="./images/illustration-1.svg" alt="illustration-1" />
+            <div class="wrapper--content">
+              <h3 class="hero-title">All your files in one secure location, accessible anywhere.</h3>
+              <p class="hero-content">
+                Fylo stores your most important files in one secure location. Access them wherever you need, share and
+                collaborate with friends, family, and co-workers.
+              </p>
 
-            <form class="hero-form" action="#">
-              <div class="input-group-1">
-                <input type="text" name="hero--email" id="hero--email" placeholder="Enter your email" class="input" />
-              </div>
-              <button class="btn-form" id="btn-hero-form">Get Started</button>
-            </form>
+              <form class="hero-form" action="#">
+                <div class="input-group-1">
+                  <input type="text" name="hero--email" id="hero--email" placeholder="Enter your email" class="input" />
+                </div>
+                <button class="btn-form" id="btn-hero-form">Get Started</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="stay-productive">
-      <picture>
-        <source media="(min-width:64rem)" srcset="./images/bg-curve-desktop.svg" class="bg-curve__desktop" />
-        <img class="bg-curve__mobile" src="./images/bg-curve-mobile.svg" alt="bg-curve-mobile" />
-      </picture>
+      <section id="stay-productive">
+        <picture>
+          <source media="(min-width:64rem)" srcset="./images/bg-curve-desktop.svg" class="bg-curve__desktop" />
+          <img class="bg-curve__mobile" src="./images/bg-curve-mobile.svg" alt="bg-curve-mobile" />
+        </picture>
 
-      <div class="bg-stay-productive">
-        <div class="container">
-          <div class="stay-productive">
-            <div class="wrapper-img">
-              <img class="img-stay-productive" src="./images/illustration-2.svg" alt="illustration-2" />
-            </div>
+        <div class="bg-stay-productive">
+          <div class="container">
+            <div class="stay-productive">
+              <div class="wrapper-img">
+                <img class="img-stay-productive" src="./images/illustration-2.svg" alt="illustration-2" />
+              </div>
 
-            <div class="wrapper--content--stay-productive">
-              <h3 class="title-1">Stay productive, wherever you are</h3>
-              <!-- paragraph -->
-              <div class="paragraph">
-                <p class="first-paragraph">
-                  Never let location be an issue when accessing your files. Fylo has you covered for all of your file
-                  storage needs.
-                </p>
-                <div class="second-paragraph">
-                  Securely share files and folders with friends, family and colleagues for live collaboration. No email
-                  attachments required!
+              <div class="wrapper--content--stay-productive">
+                <h3 class="title-1">Stay productive, wherever you are</h3>
+                <!-- paragraph -->
+                <div class="paragraph">
+                  <p class="first-paragraph">
+                    Never let location be an issue when accessing your files. Fylo has you covered for all of your file
+                    storage needs.
+                  </p>
+                  <div class="second-paragraph">
+                    Securely share files and folders with friends, family and colleagues for live collaboration. No
+                    email attachments required!
+                  </div>
                 </div>
-              </div>
 
-              <div class="how-fylo-works">
-                <span class="fylo-link">See how Fylo works</span>
-                <img class="icon-arrow" src="./images/icon-arrow.svg" alt="icon-arrow" />
-              </div>
+                <div class="how-fylo-works">
+                  <span class="fylo-link">See how Fylo works</span>
+                  <img class="icon-arrow" src="./images/icon-arrow.svg" alt="icon-arrow" />
+                </div>
 
-              <!-- card -->
-              <div class="card">
-                <img class="icon-quote" src="./images/icon-quotes.svg" alt="icon-quotes" />
-                <p class="card-content">
-                  Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-                  become a well-oiled collaboration machine.
-                </p>
-                <div class="avatar-container">
-                  <img class="img-avatar" src="./images/avatar-testimonial.jpg" alt="avatar-testimonial" />
-                  <div class="avatar-info">
-                    <h4 class="name">Kyle Burton</h4>
-                    <span class="job-title">Founder & CEO, Huddle</span>
+                <!-- card -->
+                <div class="card">
+                  <img class="icon-quote" src="./images/icon-quotes.svg" alt="icon-quotes" />
+                  <p class="card-content">
+                    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team
+                    has become a well-oiled collaboration machine.
+                  </p>
+                  <div class="avatar-container">
+                    <img class="img-avatar" src="./images/avatar-testimonial.jpg" alt="avatar-testimonial" />
+                    <div class="avatar-info">
+                      <h4 class="name">Kyle Burton</h4>
+                      <span class="job-title">Founder & CEO, Huddle</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="early-access">
-      <div class="container">
-        <div class="wrapper--content__early-access">
-          <div class="content-section">
-            <h3 class="title-2">Get early access today</h3>
-            <p class="info">
-              It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-              questions, our support team would be happy to help you.
-            </p>
-          </div>
-
-          <form class="form">
-            <div class="input-group-2">
-              <input
-                type="text"
-                name="email-access"
-                id="email-access"
-                placeholder="email@example.com"
-                class="input-early-access"
-              />
+      <section id="early-access">
+        <div class="container">
+          <div class="wrapper--content__early-access">
+            <div class="content-section">
+              <h3 class="title-2">Get early access today</h3>
+              <p class="info">
+                It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+                questions, our support team would be happy to help you.
+              </p>
             </div>
-            <button class="btn-early-access" id="btn-early-access">Get Started For Free</button>
-          </form>
-        </div>
-      </div>
-    </section>
 
-    <section id="footer">
+            <form class="form">
+              <div class="input-group-2">
+                <input
+                  type="text"
+                  name="email-access"
+                  id="email-access"
+                  placeholder="email@example.com"
+                  class="input-early-access"
+                />
+              </div>
+              <button class="btn-early-access" id="btn-early-access">Get Started For Free</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" role="contentinfo">
       <div class="container">
         <div class="footer--wrapper">
           <div>
@@ -167,18 +169,16 @@
             </div>
           </div>
         </div>
-        <!-- end footer--wrapper -->
       </div>
-    </section>
+    </footer>
     <div id="attribution">
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
         <a href="#">Frederic Boye</a>.
       </p>
     </div>
-
-    <!-- fontawesome links -->
-    <script src="https://kit.fontawesome.com/ead4dd04cb.js" crossorigin="anonymous"></script>
-    <script src="main.js" defer></script>
   </body>
+  <!-- fontawesome links -->
+  <script src="https://kit.fontawesome.com/ead4dd04cb.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
 </html>
