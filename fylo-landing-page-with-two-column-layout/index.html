@@ -13,16 +13,18 @@
         <div class="navigation__wrapper">
           <img class="brand-logo" src="./images/logo.svg" alt="header logo" />
 
-          <nav class="navigation" role="navigation">
-            <li class="nav-item"><a class="nav-item__link" href="#">Features</a></li>
-            <li class="nav-item"><a class="nav-item__link" href="#">Team</a></li>
-            <li class="nav-item"><a class="nav-item__link" href="#">Sign In</a></li>
+          <nav role="navigation">
+            <ul class="navigation">
+              <li class="nav-item"><a class="nav-item__link" href="#">Features</a></li>
+              <li class="nav-item"><a class="nav-item__link" href="#">Team</a></li>
+              <li class="nav-item"><a class="nav-item__link" href="#">Sign In</a></li>
+            </ul>
           </nav>
         </div>
       </div>
     </header>
 
-    <main role="main">
+    <main>
       <section class="hero">
         <div class="container">
           <div class="hero-wrapper">
@@ -126,7 +128,7 @@
       </section>
     </main>
 
-    <footer id="footer" role="contentinfo">
+    <footer id="footer">
       <div class="container">
         <div class="footer--wrapper">
           <div>
@@ -157,7 +159,7 @@
           </ul>
 
           <!-- social links -->
-          <div class="socials-links">
+          <div class="socials-links" role="presentation">
             <div class="icon-wrapper icon-wrapper__fb">
               <i class="fa-brands fa-facebook"></i>
             </div>
@@ -171,13 +173,14 @@
         </div>
       </div>
     </footer>
-    <div id="attribution">
+    <div id="attribution" role="contentinfo">
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
         <a href="#">Frederic Boye</a>.
       </p>
     </div>
   </body>
+
   <!-- fontawesome links -->
   <script src="https://kit.fontawesome.com/ead4dd04cb.js" crossorigin="anonymous"></script>
   <script src="main.js" defer></script>
