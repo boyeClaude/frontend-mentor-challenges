@@ -1,16 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
 :root {
   --clr-very-dark-blue: hsl(243, 87%, 12%);
   --clr-desaturated-blue: hsl(238, 22%, 44%);
+  --clr-desaturated-blue-hover: hsl(238, 88%, 71%);
   --clr-bright-blue: hsl(224, 93%, 58%);
   --clr-moderate-cyan: hsl(170, 45%, 43%);
+  --clr-moderate-cyan-hover: hsl(170, 70%, 55%);
   --clr-Light-grayish-blue: hsl(240, 80%, 98%);
   --clr-light-gray: hsl(0, 0%, 75%);
 }
@@ -123,6 +125,11 @@ a {
   font-size: 0.9rem;
 }
 
+.btn-early-access:hover,
+.btn-form:hover {
+  background-color: var(--clr-desaturated-blue-hover);
+}
+
 /* Stay productive section ----------- */
 .bg-curve__mobile,
 .bg-curve__desktop {
@@ -131,9 +138,12 @@ a {
   display: block;
 }
 
-.bg-img,
-.wrapper--content--stay-productive {
+.bg-stay-productive {
   background-color: #f8f8fe;
+}
+
+.wrapper-img {
+  text-align: center;
 }
 
 .wrapper--content--stay-productive {
@@ -165,6 +175,12 @@ a {
   color: var(--clr-moderate-cyan);
   text-decoration: underline;
   text-underline-offset: 0.5rem;
+  cursor: pointer;
+}
+
+.how-fylo-works:hover,
+.icon-arrow:hover {
+  color: var(--clr-moderate-cyan-hover);
 }
 
 .card {
@@ -238,7 +254,6 @@ a {
 form {
   font-family: "Raleway", sans-serif;
   margin-bottom: 3rem;
-  /* margin-bottom: 0; */
 }
 
 .input-early-access,
@@ -296,12 +311,17 @@ form {
 
 .icon-wrapper {
   margin: 0 1rem;
-  border: 1px solid var(--clr-Light-grayish-blue);
   height: 2.5rem;
 
   padding: 0.6rem;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.icon-wrapper__fb,
+.icon-wrapper__twitter,
+.icon-wrapper__instagram {
+  border: 1px solid var(--clr-Light-grayish-blue);
 }
 
 .attribution {
@@ -333,8 +353,9 @@ form {
 
 @media (min-width: 64rem) {
   .container {
-    max-width: 60rem;
+    max-width: 66rem;
   }
+
   /* Hero section ---------- */
   .hero-wrapper {
     display: flex;
@@ -342,13 +363,8 @@ form {
     justify-content: center;
   }
 
-  .wrapper--content,
-  .hero-img {
+  .wrapper--content {
     flex: 1;
-  }
-
-  .hero-img {
-    max-width: 25rem;
   }
 
   .wrapper--content {
@@ -379,4 +395,117 @@ form {
   }
 
   /* Stay productive section ---------- */
+  .stay-productive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wrapper-img {
+    flex: 40%;
+  }
+
+  .img-stay-productive {
+    max-width: 27rem;
+  }
+
+  .wrapper--content--stay-productive {
+    flex: 60%;
+  }
+
+  .wrapper--content--stay-productive {
+    order: -1;
+  }
+
+  .title-1,
+  .paragraph,
+  .how-fylo-works,
+  .card {
+    text-align: left;
+  }
+
+  .title-1 {
+    font-size: 1.7rem;
+  }
+
+  .paragraph {
+    width: 70%;
+    font-size: 0.9rem;
+  }
+
+  .how-fylo-works {
+    padding-bottom: 0.5rem;
+  }
+
+  .card {
+    margin: 2rem 0;
+    padding: 1rem 0.99rem;
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  .card-content,
+  .avatar-container {
+    font-size: 0.9rem;
+  }
+
+  /* Get early access section ---------- */
+  .wrapper--content__early-access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content-section {
+    flex-basis: 65%;
+  }
+
+  .form {
+    flex-basis: 35%;
+  }
+
+  .content-section {
+    text-align: left;
+  }
+
+  .info {
+    width: 75%;
+  }
+
+  .form {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .btn-early-access {
+    width: 45%;
+    font-size: 0.8rem;
+  }
+
+  /* Footer section ---------- */
+  .footer--wrapper {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    align-items: baseline;
+  }
+
+  .footer--item:hover {
+    color: var(--clr-desaturated-blue-hover);
+  }
+
+  /* social link hover */
+  .icon-wrapper__fb:hover {
+    color: #1877f2;
+    border: 1px solid #1877f2;
+  }
+
+  .icon-wrapper__twitter:hover {
+    color: #1da1f2;
+    border: 1px solid #1da1f2;
+  }
+
+  .icon-wrapper__instagram:hover {
+    color: #8a3ab9;
+    border: 1px solid #8a3ab9;
+  }
 }
