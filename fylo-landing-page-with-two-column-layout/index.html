@@ -23,7 +23,7 @@
     </header>
 
     <main role="main">
-      <section class="hero">
+      <section class="hero" role="contentinfo">
         <div class="container">
           <div class="hero-wrapper">
             <img class="hero-img" src="./images/illustration-1.svg" alt="illustration-1" />
@@ -45,7 +45,7 @@
         </div>
       </section>
 
-      <section id="stay-productive">
+      <section id="stay-productive" role="contentinfo">
         <picture>
           <source media="(min-width:64rem)" srcset="./images/bg-curve-desktop.svg" class="bg-curve__desktop" />
           <img class="bg-curve__mobile" src="./images/bg-curve-mobile.svg" alt="bg-curve-mobile" />
@@ -98,7 +98,7 @@
         </div>
       </section>
 
-      <section id="early-access">
+      <section id="early-access" role="contentinfo">
         <div class="container">
           <div class="wrapper--content__early-access">
             <div class="content-section">
@@ -143,21 +143,21 @@
             </div>
           </div>
 
-          <ul class="footer--link_1">
+          <ul class="footer--link_1" role="navigation">
             <li class="footer--item">About Us</li>
             <li class="footer--item">Jobs</li>
             <li class="footer--item">Press</li>
             <li class="footer--item">Blog</li>
           </ul>
 
-          <ul class="footer--link_2">
+          <ul class="footer--link_2" role="navigation">
             <li class="footer--item">Contact Us</li>
             <li class="footer--item">Terms</li>
             <li class="footer--item">Privacy</li>
           </ul>
 
           <!-- social links -->
-          <div class="socials-links">
+          <div class="socials-links" role="presentation">
             <div class="icon-wrapper icon-wrapper__fb">
               <i class="fa-brands fa-facebook"></i>
             </div>
@@ -171,13 +171,14 @@
         </div>
       </div>
     </footer>
-    <div id="attribution">
+    <div id="attribution" role="contentinfo">
       <p class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
         <a href="#">Frederic Boye</a>.
       </p>
     </div>
   </body>
+
   <!-- fontawesome links -->
   <script src="https://kit.fontawesome.com/ead4dd04cb.js" crossorigin="anonymous"></script>
   <script src="main.js" defer></script>
