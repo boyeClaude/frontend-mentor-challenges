@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --clr-dark-blue-intro-and-email-bg: hsl(217, 28%, 15%);
+  --clr-dark-blue-main-bg: hsl(218, 28%, 13%);
+  --clr-dark-blue-footer-bg: hsl(216, 53%, 9%);
+  --clr-dark-blue-testimonials-bg: hsl(219, 30%, 18%);
+
+  --clr-cyan-inside-call-to-action-gradient: hsl(176, 68%, 64%);
+  --clr-blue-inside-call-to-action-gradient: hsl(198, 60%, 50%);
+  --clr-light-red-error: hsl(0, 100%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Raleway", sans-serif;
+  background-color: var(--clr-dark-blue-main-bg);
+  color: var(--clr-white);
+}
+
+.header,
+.hero {
+  background-color: var(--clr-dark-blue-intro-and-email-bg);
+}
+
+/* Header ------------ */
+
+/* Hero ------------ */
+
+.bg-curvy-mobile,
+.bg-curvy-desktop {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
