@@ -9,14 +9,16 @@
   <body>
     <header class="header">
       <div class="container">
-        <img class="logo" src="./images/logo.svg" alt="logo" />
-        <nav class="navigation" role="navigation">
-          <ul class="nav--wrapper">
-            <li class="nav-items">Features</li>
-            <li class="nav-items">Team</li>
-            <li class="nav-items">Sign In</li>
-          </ul>
-        </nav>
+        <div class="header-wrapper">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
+          <nav class="navigation" role="navigation">
+            <ul class="nav--wrapper">
+              <li class="nav-items">Features</li>
+              <li class="nav-items">Team</li>
+              <li class="nav-items">Sign In</li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -35,14 +37,13 @@
               </p>
               <button class="hero-btn">Get Started</button>
             </div>
-
-            <picture>
-              <!-- bg curve background -->
-              <source media="(min-width: 64rem)" srcset="./images/bg-curvy-desktop.svg" class="bg-curvy-desktop" />
-              <img class="bg-curvy-mobile" src="./images/bg-curvy-mobile.svg" alt="bg-curvy-mobile" />
-            </picture>
           </div>
         </div>
+        <!-- curve background -->
+        <picture>
+          <source media="(min-width: 64rem)" srcset="./images/bg-curvy-desktop.svg" class="bg-curvy-desktop" />
+          <img class="bg-curvy-mobile" src="./images/bg-curvy-mobile.svg" alt="bg-curvy-mobile" />
+        </picture>
       </section>
 
       <!-- feature section -->
@@ -51,8 +52,12 @@
         <div class="bg-feature">
           <div class="container">
             <div class="feature-wrapper">
-              <div class="feature-1">
-                <img class="icon-access-anywhere" src="./images/icon-access-anywhere.svg" alt="icon-access-anywhere" />
+              <div class="feature feature-1">
+                <img
+                  class="icon icon-access-anywhere"
+                  src="./images/icon-access-anywhere.svg"
+                  alt="icon-access-anywhere"
+                />
                 <h3 class="feature-title">Access your files, anywhere</h3>
                 <p class="feature-content">
                   The ability to use a smartphone, tablet, or computer to access your account means your files follow
@@ -61,8 +66,8 @@
               </div>
 
               <!-- feature-2 -->
-              <div class="feature-2">
-                <img class="icon-security" src="./images/icon-security.svg" alt="icon-security" />
+              <div class="feature feature-2">
+                <img class="icon icon-security" src="./images/icon-security.svg" alt="icon-security" />
                 <h3 class="feature-title">Security you can trust</h3>
                 <p class="feature-content">
                   2-factor authentication and user-controlled encryption are just a couple of the security features we
@@ -71,8 +76,8 @@
               </div>
 
               <!-- feature-3 -->
-              <div class="feature-3">
-                <img class="icon-collaboration" src="./images/icon-collaboration.svg" alt="icon-collaboration" />
+              <div class="feature feature-3">
+                <img class="icon icon-collaboration" src="./images/icon-collaboration.svg" alt="icon-collaboration" />
                 <h3 class="feature-title">Real-time collaboration</h3>
                 <p class="feature-content">
                   Securely share files and folders with friends, family and colleagues for live collaboration. No email
@@ -81,8 +86,8 @@
               </div>
 
               <!-- feature-4 -->
-              <div class="feature-4">
-                <img class="" src="./images/icon-any-file.svg" alt="icon-any-file" />
+              <div class="feature feature-4">
+                <img class="icon icon-any-file" src="./images/icon-any-file.svg" alt="icon-any-file" />
                 <h3 class="feature-title">Store any type of file</h3>
                 <p class="feature-content">
                   Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file

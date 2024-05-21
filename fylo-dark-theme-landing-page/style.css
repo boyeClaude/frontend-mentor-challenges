@@ -26,20 +26,126 @@ body {
   color: var(--clr-white);
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0 1rem;
+}
+
 .header,
 .hero {
   background-color: var(--clr-dark-blue-intro-and-email-bg);
 }
 
 /* Header ------------ */
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+  align-items: center;
+}
+
+.logo {
+  width: 8rem;
+}
+
+.nav--wrapper {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav--wrapper .nav-items {
+  margin: 0 1rem;
+  cursor: pointer;
+}
 
 /* Hero ------------ */
+.hero--container {
+  padding-top: 3rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 25rem;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-paragraph {
+  margin-bottom: 1rem;
+  line-height: 2;
+}
+
+.hero-btn {
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  color: var(--clr-white);
+
+  border: none;
+  margin-top: 1rem;
+  background: linear-gradient(
+    to right,
+    var(--clr-cyan-inside-call-to-action-gradient),
+    var(--clr-blue-inside-call-to-action-gradient)
+  );
+
+  font-weight: bold;
+}
 
 .bg-curvy-mobile,
 .bg-curvy-desktop {
   display: block;
   width: 100%;
-  object-fit: cover;
+}
+
+/* feature section ------------ */
+.feature-wrapper {
+  text-align: center;
+}
+
+.feature + .feature {
+  margin: 3rem 0;
+}
+
+.icon {
+  width: 5rem;
+}
+
+.icon-access-anywhere,
+.icon-security {
+  width: 4rem;
+}
+
+.feature-title {
+  margin: 1rem 0;
+}
+
+.feature-content {
+  width: 55%;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Stay productive ------------ */
+.stay-productive-wrapper {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.illustration-stay-productive {
+  width: 100%;
+  max-width: 25rem;
+}
+
+.stay-productive-wrapper__content {
+  text-align: left;
 }
 
 .attribution {
@@ -48,4 +154,23 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 27rem) {
+  .header-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav--wrapper {
+    margin: 1rem 0;
+  }
+
+  .nav--wrapper .nav-items {
+    margin: 0;
+  }
+
+  .nav-items + .nav-items {
+    margin: 0 1rem;
+  }
 }
