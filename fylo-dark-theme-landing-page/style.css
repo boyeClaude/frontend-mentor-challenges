@@ -333,6 +333,72 @@ footer {
   padding-top: 18rem;
 }
 
+.footer-logo {
+  margin-bottom: 2.5rem;
+}
+
+.location {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: flex-start;
+}
+
+.location-info {
+  width: 70%;
+}
+
+.location-info,
+.phone-numer,
+.email-address {
+  padding-left: 1rem;
+}
+
+.contact-us {
+  margin-bottom: 2rem;
+}
+
+.phone {
+  margin-bottom: 1.5rem;
+}
+
+.footer-navigation {
+  margin: 4rem 0;
+}
+
+.nav-1,
+.nav-2 {
+  padding: 0;
+  list-style: none;
+}
+
+.nav-1 {
+  margin-bottom: 3rem;
+}
+
+.nav--item + .nav--item {
+  padding-top: 1rem;
+}
+
+.socials-link {
+  margin-bottom: 6rem;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  border: 1px solid var(--clr-white);
+  padding: 1.2rem;
+  border-radius: 50%;
+}
+
+.twitter-icon {
+  margin: 0 2rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -342,6 +408,7 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
+/* Media Queries ------------------ */
 @media (max-width: 27rem) {
   .header-wrapper {
     flex-direction: column;
