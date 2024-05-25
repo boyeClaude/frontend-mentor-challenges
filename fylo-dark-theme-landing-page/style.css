@@ -268,7 +268,10 @@ main {
 /* Form section ---------------- */
 .form-section {
   position: absolute;
-  bottom: -21rem;
+  /* bottom: -21rem; */
+  bottom: -10%;
+  top: 94%;
+  /* transform: translate(-50%, -50%); */
 }
 
 .form-section--wrapper {
@@ -391,7 +394,7 @@ footer {
 
 .icon-container {
   border: 1px solid var(--clr-white);
-  padding: 1.2rem;
+  padding: 0.8rem 1rem;
   border-radius: 50%;
 }
 
@@ -408,7 +411,8 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
-/* Media Queries ------------------ */
+/* Media Queries for navigation for 
+small screen size -------------- */
 @media (max-width: 27rem) {
   .header-wrapper {
     flex-direction: column;
@@ -425,5 +429,153 @@ footer {
 
   .nav-items + .nav-items {
     margin: 0 1rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  main {
+    padding-bottom: 13rem;
+  }
+
+  .container {
+    max-width: 62rem;
+  }
+
+  /* Header section */
+  .hero-content {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+
+  .feature-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem;
+
+    /* margin-bottom: 4rem; */
+  }
+
+  .feature + .feature {
+    margin: 0;
+  }
+
+  .icon-security {
+    width: 3rem;
+  }
+
+  .feature-3,
+  .feature-4 {
+    margin-top: 2rem;
+  }
+
+  .feature-4 {
+    grid-row: 2;
+    margin-top: 4rem;
+  }
+
+  .feature-content {
+    width: 80%;
+  }
+
+  /* Stay productive section------------- */
+  .stay-productive-wrapper {
+    margin: 6rem 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .illustration-stay-productive {
+    flex-basis: 35%;
+  }
+  .stay-productive-wrapper__content {
+    /* flex: 1; */
+    flex-basis: 65%;
+  }
+
+  .stay-productive-wrapper__content {
+    padding-left: 3rem;
+  }
+
+  .stay-prod-title {
+    width: 50%;
+    line-height: 1.6;
+  }
+
+  .p-container {
+    font-size: 0.9rem;
+  }
+
+  /* Testimonials section------------- */
+  .testimonials {
+    margin-top: 8rem;
+  }
+
+  .wrapper-testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    padding: 0;
+  }
+
+  .wrapper-testimonials::before {
+    top: -34px;
+    left: -12px;
+    z-index: -1;
+  }
+
+  .card {
+    max-width: 40rem;
+  }
+
+  .card + .card {
+    margin-top: 0;
+  }
+
+  .card-content {
+    width: 100%;
+  }
+
+  /* Form section------------- */
+  .form-section {
+    transform: translate(2.4rem, 0.63rem);
+  }
+
+  /* Footer section --------------- */
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-us {
+    margin-bottom: 0;
+  }
+
+  .footer-navigation {
+    margin: 0;
+  }
+
+  .socials-link {
+    margin-bottom: 0;
+  }
+
+  .footer-info {
+    margin-top: 8rem;
+  }
+}
+
+/* this media query is for the overtop form on big screen size */
+@media (min-width: 80rem) {
+  .form-section {
+    transform: translate(9rem, -1.37rem);
   }
 }
