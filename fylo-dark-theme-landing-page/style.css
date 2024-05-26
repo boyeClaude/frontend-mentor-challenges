@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 :root {
   --clr-dark-blue-intro-and-email-bg: hsl(217, 28%, 15%);
   --clr-dark-blue-main-bg: hsl(218, 28%, 13%);
@@ -12,15 +19,7 @@
   --clr-white: hsl(0, 0%, 100%);
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 body {
-  /* font-family: "Open Sans", sans-serif; */
   font-family: "Raleway", sans-serif;
   background-color: var(--clr-dark-blue-main-bg);
   color: var(--clr-white);
@@ -104,6 +103,12 @@ main {
   );
 
   font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.form-btn:hover {
+  background: var(--clr-cyan-inside-call-to-action-gradient);
 }
 
 .bg-curvy-mobile,
@@ -175,13 +180,10 @@ main {
   display: flex;
   justify-items: center;
 
-  /* width: 30%; */
-  /* width: 100%;
-  max-width: 30%; */
-  /* border-bottom: 1px solid var(--clr-cyan-inside-call-to-action-gradient); */
   padding-bottom: 0.2rem;
   text-decoration: underline;
   text-decoration-color: var(--clr-cyan-inside-call-to-action-gradient);
+
   cursor: pointer;
 }
 
@@ -210,7 +212,6 @@ main {
 
 .card {
   width: 100%;
-  /* max-width: 25rem; */
   background-color: var(--clr-dark-blue-testimonials-bg);
 
   color: var(--clr-white);
@@ -268,10 +269,8 @@ main {
 /* Form section ---------------- */
 .form-section {
   position: absolute;
-  /* bottom: -21rem; */
+  left: auto;
   bottom: -10%;
-  top: 94%;
-  /* transform: translate(-50%, -50%); */
 }
 
 .form-section--wrapper {
@@ -544,7 +543,21 @@ small screen size -------------- */
 
   /* Form section------------- */
   .form-section {
-    transform: translate(2.4rem, 0.63rem);
+    /* transform: translate(2.4rem, 0.63rem); */
+    transform: translateY(42px);
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 4rem;
+    justify-content: center;
+  }
+
+  .email {
+    margin-bottom: 0;
   }
 
   /* Footer section --------------- */
@@ -580,6 +593,10 @@ small screen size -------------- */
 /* this media query is for the overtop form on big screen size */
 @media (min-width: 80rem) {
   .form-section {
-    transform: translate(9rem, -1.37rem);
+    /* transform: translate(9rem, -1.37rem); */
+    /* transform: translateY(-500px); */
+    transform: translate(15%, 5%);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
