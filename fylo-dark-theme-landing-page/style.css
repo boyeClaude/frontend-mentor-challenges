@@ -550,10 +550,10 @@ small screen size -------------- */
   /* Footer section --------------- */
   .footer-wrapper {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: 30% 23% 15% 12% 22%;
+    gap: 0.5rem;
+    justify-content: start;
+    align-items: start;
   }
 
   .contact-us {
@@ -562,6 +562,10 @@ small screen size -------------- */
 
   .footer-navigation {
     margin: 0;
+  }
+
+  .nav-1 {
+    margin-bottom: 0;
   }
 
   .socials-link {
