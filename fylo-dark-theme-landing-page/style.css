@@ -67,6 +67,29 @@ main {
 }
 
 /* Hero ------------ */
+
+/*  we've done this for the curvy background */
+.hero {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 8rem;
+}
+
+.hero::after {
+  content: "";
+  background-image: url("./images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  height: 100%;
+  background-position: bottom;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+/*  end - bg curvy */
+
 .hero--container {
   padding-top: 3rem;
   text-align: center;
@@ -111,12 +134,6 @@ main {
   background: var(--clr-cyan-inside-call-to-action-gradient);
 }
 
-.bg-curvy-mobile,
-.bg-curvy-desktop {
-  display: block;
-  width: 100%;
-}
-
 /* feature section ------------ */
 .feature-wrapper {
   text-align: center;
@@ -147,7 +164,7 @@ main {
 
 /* Stay productive ------------ */
 .stay-productive-wrapper {
-  margin: 3rem 0;
+  margin: 6rem 0 3rem 0;
   text-align: center;
   padding: 0 4rem;
 }
@@ -440,11 +457,24 @@ small screen size -------------- */
     max-width: 62rem;
   }
 
-  /* Header section */
+  /* Hero section --------- */
+  .hero {
+    margin-bottom: 9rem;
+  }
+
+  .hero::after {
+    background-image: url("./images/bg-curvy-desktop.svg");
+  }
+
   .hero-content {
     width: 50%;
     margin: 0 auto;
     margin-top: 3rem;
+  }
+
+  /* Feature section --------- */
+  .feature {
+    margin-bottom: 6rem;
   }
 
   .feature-wrapper {
