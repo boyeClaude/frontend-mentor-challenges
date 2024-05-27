@@ -27,8 +27,9 @@
 | 18  | Recipe page                         | [demo](https://the-recipepage.netlify.app/)                        |
 | 19  | FAQ accordion                       | [demo](https://the-faq-accordion.netlify.app/)                     |
 | 20  | Article preview component           | [demo](https://the-article-preview-component.netlify.app/)         |
-| 21  | huddle-landing-page-with-curved     | [demo](https://the-huddle-landing-page-with-curved.netlify.app/)   |
-| 22  | fylo-landing-page-with-2-column     | [demo](https://the-fylo-landing-page-with-2-columns.netlify.app/)  |
+| 21  | huddle landing page with curved     | [demo](https://the-huddle-landing-page-with-curved.netlify.app/)   |
+| 22  | fylo landing page with-2-column     | [demo](https://the-fylo-landing-page-with-2-columns.netlify.app/)  |
+| 23  | fylo dark theme landing page        | [demo](https://the-fylo-dark-theme-landing-page.netlify.app/)      |
 
 ## Challenges done with tailwindcss
 
