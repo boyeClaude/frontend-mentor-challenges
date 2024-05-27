@@ -60,10 +60,7 @@ body {
 }
 
 main {
-  /* we're doing to this to postion the form
-  section between the main and the footer section */
-  position: relative;
-  padding-bottom: 20rem;
+  padding-bottom: 15rem;
 }
 
 /* Hero ------------ */
@@ -286,8 +283,10 @@ main {
 /* Form section ---------------- */
 .form-section {
   position: absolute;
-  left: auto;
-  bottom: -10%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-500px);
 }
 
 .form-section--wrapper {
@@ -348,8 +347,8 @@ main {
 /* Footer ---------------- */
 footer {
   background-color: var(--clr-dark-blue-footer-bg);
-  padding: 8rem 4rem;
-  padding-top: 18rem;
+  position: relative;
+  padding: 20rem 4rem 8rem 4rem;
 }
 
 .footer-logo {
@@ -448,6 +447,21 @@ small screen size -------------- */
   }
 }
 
+/* This media is to display the overlay form properly on xs-small screen size */
+@media (max-width: 29rem) {
+  .form-section {
+    transform: translateY(-611px);
+  }
+
+  .footer-logo {
+    margin-top: 8rem;
+  }
+
+  .socials-link {
+    margin-top: 5rem;
+  }
+}
+
 @media (min-width: 64rem) {
   main {
     padding-bottom: 13rem;
@@ -482,8 +496,6 @@ small screen size -------------- */
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 4rem;
-
-    /* margin-bottom: 4rem; */
   }
 
   .feature + .feature {
@@ -522,8 +534,8 @@ small screen size -------------- */
   .illustration-stay-productive {
     flex-basis: 35%;
   }
+
   .stay-productive-wrapper__content {
-    /* flex: 1; */
     flex-basis: 65%;
   }
 
@@ -571,12 +583,6 @@ small screen size -------------- */
     width: 100%;
   }
 
-  /* Form section------------- */
-  .form-section {
-    /* transform: translate(2.4rem, 0.63rem); */
-    transform: translateY(42px);
-  }
-
   .form {
     display: grid;
     grid-template-columns: 70% 30%;
@@ -617,16 +623,5 @@ small screen size -------------- */
 
   .footer-info {
     margin-top: 8rem;
-  }
-}
-
-/* this media query is for the overtop form on big screen size */
-@media (min-width: 80rem) {
-  .form-section {
-    /* transform: translate(9rem, -1.37rem); */
-    /* transform: translateY(-500px); */
-    transform: translate(15%, 5%);
-    margin-left: auto;
-    margin-right: auto;
   }
 }
