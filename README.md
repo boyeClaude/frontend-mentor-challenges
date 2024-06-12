@@ -37,7 +37,6 @@
 | ------------------------------ | ------------------------------------------------------ |
 | Product preview card component | [demo](https://tw-product-card-component.netlify.app/) |
 | Interative-rating component    | [demo](https://tw-interative-rating.netlify.app/)      |
-| NFT preview card component     | [demo]()                                               |
 
 ## Live demo of challenges that are not on frontend mentor website
 
