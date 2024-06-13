@@ -9,6 +9,7 @@
 
 // variables
 $clr-pink: hsl(322, 100%, 66%);
+$clr-pink__hover: hsl(321, 83%, 77%);
 $clr-very-pale-cyan: hsl(193, 100%, 96%);
 $clr-very-dark-cyan: hsl(192, 100%, 9%);
 $clr-grayish-blue: hsl(208, 11%, 55%);
@@ -16,10 +17,129 @@ $clr-grayish-blue: hsl(208, 11%, 55%);
 // breakpoint
 $desktop-width: 64rem;
 
+// utilities
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 2rem;
+}
+
+.header-hero-img-mobile,
+.img-illustration-grow-together,
+.img-illustration-flowing-conversation,
+.img-illustration-your-users {
+  width: 100%;
+}
+
 body {
   font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
 }
+
+/* ---------- header ----------*/
+.header {
+  background-color: $clr-very-pale-cyan;
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 2rem;
+  }
+
+  &-logo {
+    max-width: 7rem;
+  }
+
+  &-btn {
+    border: none;
+    padding: 0.5rem 1.5rem;
+    background-color: white;
+
+    color: black;
+    border-radius: 1rem;
+    box-shadow: 3px 2px 109px -13px rgba(0, 0, 0, 0.75);
+
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      color: $clr-grayish-blue;
+    }
+  }
+
+  &-hero {
+    text-align: center;
+  }
+
+  &-hero-content--title {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  &-hero-content__content {
+    padding: 1.5rem 0;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  &-hero-btn {
+    padding: 1em 3em;
+    color: white;
+    background-color: $clr-pink;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 4em;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+      background-color: $clr-pink__hover;
+    }
+  }
+
+  &-hero-img-mobile {
+    max-width: 35rem;
+  }
+}
+@media (min-width: 64rem) {
+  .header {
+    background-image: url("../images/bg-hero-desktop.svg");
+
+    &-hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
+
+      text-align: left;
+      padding: 2rem 0;
+    }
+
+    &-hero-content--title,
+    &-hero-content__content {
+      margin: 0;
+    }
+
+    &-hero-content__content {
+      width: 80%;
+      font-size: 0.9rem;
+    }
+
+    &-hero-img-mobile {
+      max-width: 24rem;
+    }
+  }
+}
+
+/* ---------- section: grow-together ----------*/
+/* ---------- section: flowing-conversations ----------*/
+/* ---------- section: your-users ----------*/
 
 #footer {
   background-color: $clr-very-dark-cyan;

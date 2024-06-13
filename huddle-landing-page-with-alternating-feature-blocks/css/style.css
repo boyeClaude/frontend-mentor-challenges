@@ -6,11 +6,108 @@
   margin: 0;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 2rem;
+}
+
+.header-hero-img-mobile,
+.img-illustration-grow-together,
+.img-illustration-flowing-conversation,
+.img-illustration-your-users {
+  width: 100%;
+}
+
 body {
   font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
 }
 
+/* ---------- header ----------*/
+.header {
+  background-color: hsl(193, 100%, 96%);
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.header-logo {
+  max-width: 7rem;
+}
+.header-btn {
+  border: none;
+  padding: 0.5rem 1.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  box-shadow: 3px 2px 109px -13px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  font-weight: bold;
+}
+.header-btn:hover {
+  color: hsl(208, 11%, 55%);
+}
+.header-hero {
+  text-align: center;
+}
+.header-hero-content--title {
+  width: 60%;
+  margin: 0 auto;
+}
+.header-hero-content__content {
+  padding: 1.5rem 0;
+  width: 65%;
+  margin: 0 auto;
+}
+.header-hero-btn {
+  padding: 1em 3em;
+  color: white;
+  background-color: hsl(322, 100%, 66%);
+  border: none;
+  cursor: pointer;
+  border-radius: 4em;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+.header-hero-btn:hover {
+  background-color: hsl(321, 83%, 77%);
+}
+.header-hero-img-mobile {
+  max-width: 35rem;
+}
+
+@media (min-width: 64rem) {
+  .header {
+    background-image: url("../images/bg-hero-desktop.svg");
+  }
+  .header-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    text-align: left;
+    padding: 2rem 0;
+  }
+  .header-hero-content--title, .header-hero-content__content {
+    margin: 0;
+  }
+  .header-hero-content__content {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+  .header-hero-img-mobile {
+    max-width: 24rem;
+  }
+}
+/* ---------- section: grow-together ----------*/
+/* ---------- section: flowing-conversations ----------*/
+/* ---------- section: your-users ----------*/
 #footer {
   background-color: hsl(192, 100%, 9%);
 }
