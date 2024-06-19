@@ -21,7 +21,7 @@ $desktop-width: 64rem;
 .container {
   margin: 0 auto;
   max-width: 60rem;
-  padding: 2rem;
+  padding: 0 1.5rem;
 }
 
 .header-hero-img-mobile,
@@ -49,6 +49,7 @@ body {
     align-items: center;
 
     margin-bottom: 2rem;
+    padding: 1rem 0;
   }
 
   &-logo {
@@ -138,9 +139,60 @@ body {
 }
 
 /* ---------- section: grow-together ----------*/
-/* ---------- section: flowing-conversations ----------*/
-/* ---------- section: your-users ----------*/
+.wrapper__grow-together,
+.wrapper__flowing-conversations,
+.wrapper__your-users {
+  text-align: center;
+  border: 1px solid transparent;
+  box-shadow: 4px 0px 22px -4px rgba(0, 0, 0, 0.38);
 
+  border-radius: 0.8rem;
+  padding: 4rem 2rem 2.4rem 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.img-illustration-grow-together,
+.img-illustration-flowing-conversation,
+.img-illustration-your-users {
+  max-width: 20rem;
+}
+
+.grow-together__content,
+.flowing-conversations__content,
+.your-users__content {
+  padding-top: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.content {
+  color: $clr-grayish-blue;
+  font-size: 0.9rem;
+}
+/* ---------- section: flowing-conversations ----------*/
+#flowing-conversations {
+  margin-top: 3rem;
+}
+
+.wrapper__flowing-conversations {
+  margin-top: 1rem;
+}
+
+/* ---------- section: your-users ----------*/
+#your-users {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.wrapper__your-users {
+  margin-top: 1rem;
+}
 #footer {
   background-color: $clr-very-dark-cyan;
 }
@@ -151,4 +203,45 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 64rem) {
+  .wrapper__grow-together,
+  .wrapper__flowing-conversations,
+  .wrapper__your-users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 2rem 2.4rem 2rem;
+  }
+
+  .img-illustration-grow-together,
+  .img-illustration-your-users {
+    order: 1;
+  }
+
+  .wrapper__flowing-conversations {
+    padding: 4rem 2rem 2.4rem 2rem;
+  }
+
+  .grow-together__content,
+  .your-users__content,
+  .flowing-conversations__content {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 2rem;
+  }
+
+  .flowing-conversations__content {
+    padding-left: 6rem;
+  }
+
+  .content {
+    width: 85%;
+  }
+
+  .flowing-conversations__content .content {
+    width: 99%;
+  }
 }
