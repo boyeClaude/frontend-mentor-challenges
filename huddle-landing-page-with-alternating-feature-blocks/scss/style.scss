@@ -24,6 +24,15 @@ $desktop-width: 64rem;
   padding: 0 1.5rem;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
 .header-hero-img-mobile,
 .img-illustration-grow-together,
 .img-illustration-flowing-conversation,
@@ -187,19 +196,122 @@ body {
 /* ---------- section: your-users ----------*/
 #your-users {
   margin-top: 3rem;
-  margin-bottom: 10rem;
+  margin-bottom: 17rem;
 }
 
 .wrapper__your-users {
   margin-top: 1rem;
 }
+
+/* ---------- section: footer ----------*/
 #footer {
   background-color: $clr-very-dark-cyan;
+  color: $clr-very-pale-cyan;
+  position: relative;
+
+  padding-top: 10rem;
+  font-size: 1rem;
+}
+
+.footer-header {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+
+  box-shadow: 4px 0px 22px -4px rgba(0, 0, 0, 0.38);
+  color: black;
+  padding: 4rem;
+  text-align: center;
+
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &-title {
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  &__btn {
+    padding: 0.8rem 0.5rem;
+    color: white;
+    background-color: $clr-pink;
+
+    border-radius: 2rem;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 0.5rem;
+
+    box-shadow: 3px 2px 109px -13px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+
+    &:hover {
+      background-color: $clr-pink__hover;
+    }
+  }
+}
+
+.company {
+  &-info {
+    padding-top: 2rem;
+  }
+
+  &-location {
+    display: flex;
+  }
+
+  &-phone,
+  &-email {
+    padding-top: 1.5rem;
+  }
+}
+
+.address-location {
+  padding-left: 1rem;
+  width: 80%;
+}
+
+.phone-number,
+.email-address {
+  padding-left: 1rem;
+}
+
+.link_1 {
+  padding-top: 2rem;
+}
+
+.wrapper-socials {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.social-box {
+  border: 1px solid white;
+  padding: 0.5rem 0.6rem;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:hover {
+    border-color: $clr-pink;
+    color: $clr-pink;
+  }
+}
+
+.twitter {
+  margin: 0 1rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  padding: 1rem 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -243,5 +355,46 @@ body {
 
   .flowing-conversations__content .content {
     width: 99%;
+  }
+
+  // ------------------ footer -------------------
+  .wrapper-footer__content {
+    position: relative;
+  }
+
+  .footer--content {
+    display: grid;
+    grid-template-columns: 45% 15% 15% 25%;
+    gap: 1rem;
+
+    margin: 2rem 0;
+    align-items: start;
+  }
+
+  .company-info {
+    padding-top: 0;
+  }
+
+  .link_1 {
+    padding-top: 0;
+  }
+
+  .wrapper-socials {
+    padding-top: 0.7rem;
+  }
+
+  .copyright {
+    text-align: right;
+    margin-top: 1rem;
+
+    position: absolute;
+    left: 5px;
+    right: -139px;
+    top: 320px;
+  }
+
+  .attribution {
+    padding-top: 8rem;
+    padding-bottom: 3rem;
   }
 }

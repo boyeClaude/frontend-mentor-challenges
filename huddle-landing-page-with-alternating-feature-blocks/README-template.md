@@ -96,7 +96,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Website - [Frederic Boye](https://fredericboye.netlify.app/)
 - Frontend Mentor - [@boyeClaude](https://www.frontendmentor.io/profile/boyeClaude)
 - Twitter - [@the*boye*](https://x.com/the_boye_)
-
-### to be deleted
-
-sass --watch style.scss ../css/style.css
