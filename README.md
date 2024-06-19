@@ -30,7 +30,7 @@
 | 21  | huddle landing page with curved                     | [demo](https://the-huddle-landing-page-with-curved.netlify.app/)   |
 | 22  | fylo landing page with-2-column                     | [demo](https://the-fylo-landing-page-with-2-columns.netlify.app/)  |
 | 23  | fylo dark theme landing page                        | [demo](https://the-fylo-dark-theme-landing-page.netlify.app/)      |
-| 24  | Huddle landing page with alternating feature blocks | [demo]()                                                           |
+| 24  | Huddle landing page with alternating feature blocks | [demo](https://huddle-landing-with-feature-blocks.netlify.app)     |
 
 ## Challenges done with tailwindcss
 
