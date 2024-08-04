@@ -19,6 +19,19 @@ body {
   font-size: 18px;
 }
 
+.image-computer, .image-devices{
+  width: 100%;
+  max-width: 20rem;
+
+}
+
+.container{
+  width: 100%;
+  max-width: 64rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -27,3 +40,5 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+

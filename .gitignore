@@ -1,3 +1,5 @@
 .vscode/
 # Local Netlify folder
 .netlify
+.idea
+clipboard-landing-page-master/run.txt
